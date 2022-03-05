@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="favicon-16x16.png">
+	<link rel="icon" type="image/png" href="favicon-32x32.png">
+	<link rel="stylesheet" type="text/css" href="css/critical.css">
+	<title>Guide</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper__in justify-content-center">
+			<div class="wrapper__content">
+				<div class="container-fluid">
+					<svg class="svg-icon svg-icon_font_size_50">
+						<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+					</svg>
+					<div class="lazy-box lazy-loading">
+						<img
+							class="lazy-img lazy-box-img lazyload"
+							data-sizes="auto"
+							data-src="images/logo.svg"
+							src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+							alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" type="text/css" href="css/vendorCss.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script async>
+		function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+	
+		if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+			loadJS("https://afarkas.github.io/lazysizes/plugins/respimg/ls.respimg.min.js");
+		};
+		var lazy = function lazy() {
+			document.addEventListener('lazyloaded', function (e)  {
+				e.target.parentNode.classList.add('lazy-image-loaded');
+				e.target.parentNode.classList.remove('lazy-loading');
+			});
+		}
+	
+		lazy();
+	</script>
+	<script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js" async></script>
+	<script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>
+		// resize window setTimeout function
+			var waitForFinalEvent = (function () {
+				var timers = {};
+				return function (callback, ms, uniqueId) {
+					if (!uniqueId) {
+						uniqueId = "Don't call this twice without a uniqueId";
+					}
+					if (timers[uniqueId]) {
+						clearTimeout (timers[uniqueId]);
+					}
+					timers[uniqueId] = setTimeout(callback, ms);
+				};
+			})();
+		// ====================
+		// $('[data-padding]').css({'padding-top': $('.header').outerHeight()});
+		var headerH = $('.header').outerHeight();
+		$(window).on('resize', function() {
+			headerH = $('.header').outerHeight();
+			waitForFinalEvent(function() {
+				$('[data-padding]').css({'padding-top': headerH});
+			}, 500, 'resize');
+		})
+		</script>
+	<script src="js/vendor.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
