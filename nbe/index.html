@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="theme-color" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" type="image/png" href="favicon-16x16.png">
+		<link rel="icon" type="image/png" href="favicon-32x32.png">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>nbe main page</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="wrapper__in">
+				<header class="header">
+					<div class="container-fluid">
+						<div class="d-flex flex-wrap align-items-center">
+							<a class="header__logo logo" href="#">
+								<img class="lazy-img lazyload" data-sizes="auto" data-src="images/logo.png" alt="">
+							</a>
+							<div class="header__phone phone">
+								<!-- <svg class="phone__icon svg-icon">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#telephone"></use>
+								</svg> -->
+								<a class="phone__link d-flex flex-nowrap align-items-center" href="tel:+88005506534">
+									<svg class="phone__icon svg-icon">
+										<use xlink:href="images/svg-sprite/svgSprite.svg#telephone"></use>
+									</svg>
+									<span>8 800 550 65 34</span>
+								</a>
+								<div class="phone__text">Звонок бесплатный по России</div>
+							</div>
+							<div class="header__menu menu ml-xl-auto" data-id="menu">
+								<div class="menu__in position-relative">
+									<button class="menu__close close close_position_default d-lg-none" type="button" data-close="menu">
+										<svg class="menu__icon svg-icon svg-icon_color_black svg-icon_font_size_25">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+										</svg>
+									</button>
+									<div class="menu__in-scroll">
+										<ul class="menu__nav nav nav-pills menu-nav d-flex flex-wrap align-items-start" id="menu-scrolSpy">
+											<li>
+												<div class="menu-nav__dropdown dropdown">
+													<a class="dropdown__toggle nav-link active" href="#programs">
+														<span>Программы</span>
+														<svg class="dropdown__caret-angle svg-icon svg-icon_font_size_7">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+														</svg>
+													</a>
+													<ul class="dropdown__menu">
+														<li><a href="#">Программы</a></li>
+														<li><a href="#">Кейсы</a></li>
+														<li><a href="#">Отзывы</a></li>
+													</ul>
+												</div>
+											</li>
+											<li><a class="nav-link" href="#case">Кейсы</a></li>
+											<li><a class="nav-link" href="#reviews">Отзывы</a></li>
+										</ul>
+									</div>
+									<a class="menu__login button ml-auto mr-auto d-lg-none" href="#">Войти</a>
+								</div>
+							</div>
+							<a class="header__login button d-none d-lg-inline-block" href="#">Войти</a>
+							<button class="header__button button-clr d-lg-none" type="button" data-open="menu">
+								<svg class="svg-icon svg-icon_color_black">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#menu"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</header>
+				<div class="wrapper__content">
+					<div class="offer">
+						<div class="offer__in">
+							<img class="offer__clouds lazy-img lazyload" data-src="images/offer-clouds-bg.png">
+							<div class="offer__container container-fluid">
+								<div class="row justify-content-between align-items-start">
+									<div class="offer__column col-lg-5 col-xl-6">
+										<div class="content">
+											<h1>Мы обучаем <br> востребованным <br> интернет-профессиям <br> онлайн </h1>
+											<div id="typed-strings">
+												<p>Освойте профессию будущего за 8 недель <br>  и получите диплом государственного образца</p>
+												<p>Пройдите бесплатный тест и узнайте, <br>  какие профессии вам подходят </p>
+											</div>
+											<div>
+												<span id="typed"></span>
+											</div>
+											<a class="button button_theme_yellow" href="#" data-toggle="modal" data-target="#modalOffer">Начать обучение</a>
+										</div>
+									</div>
+									<div class="offer__column offer__column_img col-lg-5 col-xl-4 text-center">
+										<object id="offerImg" data="images/offer-img.svg" type="image/svg+xml">
+											<img class="lazy-img lazyload" data-src="images/offer-bg.svg" />
+										</object>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="total">
+						<div class="total__container container-fluid">
+							<div class="total__row row flex-column-reverse flex-lg-row">
+								<div class="total__column col-lg-4">
+									<div class="result-courses__item offer-advantage">
+										<div class="offer-advantage__in">
+											<div class="content content-advantages text-center">
+												<div class="counter-text">
+													<h2><span data-count-text>100</span>%</h2>
+												</div>
+												<div class="content-advantages__name">гарантия трудоустройства</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="total__column col-lg-4">
+									<div class="result-courses__item offer-advantage">
+										<div class="offer-advantage__in">
+											<div class="content content-advantages text-center">
+												<div class="counter-text">
+													<h2><span data-count-text>3819000</span></h2>
+												</div>
+												<div class="content-advantages__name">уроков на платформе</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="total__column col-lg-4">
+									<div class="result-courses__item offer-advantage">
+										<div class="offer-advantage__in">
+											<div class="content content-advantages text-center">
+												<div class="counter-text">
+													<h2><span data-count-text>49900</span></h2>
+												</div>
+												<div class="content-advantages__name">студентов</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="result-courses" id="reviews">
+						<div class="container-fluid">
+							<div class="result-courses__title section-title text-center">
+								<h2>4.398 студентов <br> прошли успешное обучение</h2>
+							</div>
+							<div class="result-courses__row row">
+								<div class="result-courses__column col-lg-7 d-flex flex-column justify-content-between">
+									<div class="result-courses__results icon-text icon-text_theme_two align-items-center">
+										<svg class="icon-text__icon svg-icon svg-icon_font_size_50">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#quote"></use>
+										</svg>
+										<div class="icon-text__text">Посмотрите результаты <br> наших выпускников</div>
+									</div>
+									<div class="video-box" data-video>
+										<div class="video-box__video-wrap">
+											<div
+												class="video-box__poster lazy-background lazyload"
+												data-sizes="auto"
+												data-bgset="images/poster.png,
+															images/poster-375.png 375w">&nbsp;</div>
+											<button class="video-box__button play-button" type="button">
+												<img src="images/play.svg" alt="">
+											</button>
+											<video class="video-box__video lazy-img lazyload" data-src="video/image.mp4" controls preload="none"><!-- <source src="video/image.mp4" type="video/mp4"> -->Your browser does not support the video tag.</video>
+										</div>
+									</div>
+									<a class="result-courses__puple icon-text icon-text_theme_two align-items-center" href="#">
+										<svg class="icon-text__icon svg-icon svg-icon_font_size_35">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#vk"></use>
+										</svg>
+										<div class="icon-text__text">Эльмира Ильясовa</div>
+									</a>
+								</div>
+								<div class="result-courses__column result-courses__column_content col-lg-5">
+									<div class="result-courses__content">
+										<div class="result-courses__content-in content">
+											<div class="content-advantages">
+												<div class="content-advantages__name">курс</div>
+											</div>
+											<h4>Профессия <br> Интернет-маркетолог</h4>
+											<div class="content-advantages">
+												<div class="row">
+													<div class="column">
+														<div class="content-advantages__name">до обучения</div>
+														<h4>15.000 ₽</h4>
+													</div>
+													<div class="column">
+														<div class="content-advantages__name">после обучения</div>
+														<h4>60.000 ₽</h4>
+													</div>
+												</div>
+											</div>
+											<p>Выбирайте удобный режим и нагрузку, <br> которые впишутся в ваш график. <br> Заниматься можно где угодно и когда <br> угодно — не нужно подстраиваться </p>
+											<a class="button button_theme_yellow" href="#">Попробовать бесплатно</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="video-slider owl-carousel owl-theme" data-slider="video-cards">
+								<div class="video-box video-box_small">
+									<div class="video-box__video-wrap" data-video>
+										<div
+											class="video-box__poster lazy-background lazyload"
+											data-sizes="auto"
+											data-bgset="images/video-box-poster1.png">&nbsp;</div>
+										<video class="video-box__video lazyload lazy-img" datavideo/image.mpg4" controls preload="none"><!-- <source src="video/image.mp4" type="video/mp4"> -->Your browser does not support the video tag.</video>
+									</div>
+									<div class="video-box__description content-advantages">
+										<div class="video-box__poster-title">
+											<div class="content-advantages__name">Курс</div>
+											<h4>Профессия <br> Интернет-маркетолог</h4>
+										</div>
+										<div class="video-box__description-row row">
+											<div class="column">
+												<div class="content-advantages__name">до обучения</div>
+												<h4>15.000 ₽</h4>
+											</div>
+											<div class="column">
+												<div class="content-advantages__name">после обучения</div>
+												<h4>60.000 ₽</h4>
+											</div>
+										</div>
+										<div class="video-box__mobile-content">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+											<a class="button button_theme_yellow" href="#">Попробовать бесплатно</a>
+										</div>
+									</div>
+								</div>
+								<div class="video-box video-box_small">
+									<div class="video-box__video-wrap" data-video>
+										<div
+											class="video-box__poster lazy-background lazyload"
+											data-sizes="auto"
+											data-bgset="images/video-box-poster2.png">&nbsp;</div>
+										<video class="video-box__video lazyload lazy-img" data-src="video/image.mpg4" controls preload="none"><!-- <source src="video/image.mp4" type="video/mp4"> -->Your browser does not support the video tag.</video>
+									</div>
+									<div class="video-box__description content-advantages">
+										<div class="video-box__poster-title">
+											<div class="content-advantages__name">Курс</div>
+											<h4>Профессия <br> Интернет-маркетолог</h4>
+										</div>
+										<div class="video-box__description-row row">
+											<div class="column">
+												<div class="content-advantages__name">до обучения</div>
+												<h4>15.000 ₽</h4>
+											</div>
+											<div class="column">
+												<div class="content-advantages__name">после обучения</div>
+												<h4>60.000 ₽</h4>
+											</div>
+										</div>
+										<div class="video-box__mobile-content">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+											<a class="button button_theme_yellow" href="#">Попробовать бесплатно</a>
+										</div>
+									</div>
+								</div>
+								<div class="video-box video-box_small">
+									<div class="video-box__video-wrap" data-video>
+										<div
+											class="video-box__poster lazy-background lazyload"
+											data-sizes="auto"
+											data-bgset="images/video-box-poster3.png">&nbsp;</div>
+										<video class="video-box__video lazyload lazy-img" data-src="video/image.mpg4" controls preload="none"><!-- <source src="video/image.mp4" type="video/mp4"> -->Your browser does not support the video tag.</video>
+									</div>
+									<div class="video-box__description content-advantages">
+										<div class="video-box__poster-title">
+											<div class="content-advantages__name">Курс</div>
+											<h4>Профессия <br> Интернет-маркетолог</h4>
+										</div>
+										<div class="video-box__description-row row">
+											<div class="column">
+												<div class="content-advantages__name">до обучения</div>
+												<h4>15.000 ₽</h4>
+											</div>
+											<div class="column">
+												<div class="content-advantages__name">после обучения</div>
+												<h4>60.000 ₽</h4>
+											</div>
+										</div>
+										<div class="video-box__mobile-content">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+											<a class="button button_theme_yellow" href="#">Попробовать бесплатно</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="result-courses__collapse collapse row row_indents_s justify-content-center" id="collapseExample">
+								<div class="video-reviews-list__column column">
+									<div class="video-box video-box_small">
+										<div class="video-box__video-wrap" data-video>
+											<div class="video-box__poster lazy-background" data-sizes="auto" data-bgset="images/video-box-poster2.png">&nbsp;</div>
+											<video class="video-box__video lazy-img" data-src="video/image.mpg4" controls preload="none"><!-- <source src="video/image.mp4" type="video/mp4"> -->Your browser does not support the video tag.</video>
+										</div>
+										<div class="video-box__description content-advantages">
+											<div class="video-box__poster-title">
+												<div class="content-advantages__name">Курс</div>
+												<h4>Профессия <br> Интернет-маркетолог</h4>
+											</div>
+											<div class="video-box__description-row row">
+												<div class="column">
+													<div class="content-advantages__name">до обучения</div>
+													<h4>15.000 ₽</h4>
+												</div>
+												<div class="column">
+													<div class="content-advantages__name">после обучения</div>
+													<h4>60.000 ₽</h4>
+												</div>
+											</div>
+											<div class="video-box__mobile-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+												<a class="button button_theme_yellow" href="#">Попробовать бесплатно</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="video-reviews-list__column column">
+									<div class="video-box video-box_small">
+										<div class="video-box__video-wrap" data-video>
+											<div class="video-box__poster lazy-background" data-sizes="auto" data-bgset="images/video-box-poster3.png">&nbsp;</div>
+											<video class="video-box__video lazy-img" data-src="video/image.mpg4" controls preload="none"><!-- <source src="video/image.mp4" type="video/mp4"> -->Your browser does not support the video tag.</video>
+										</div>
+										<div class="video-box__description content-advantages">
+											<div class="video-box__poster-title">
+												<div class="content-advantages__name">Курс</div>
+												<h4>Профессия <br> Интернет-маркетолог</h4>
+											</div>
+											<div class="video-box__description-row row">
+												<div class="column">
+													<div class="content-advantages__name">до обучения</div>
+													<h4>15.000 ₽</h4>
+												</div>
+												<div class="column">
+													<div class="content-advantages__name">после обучения</div>
+													<h4>60.000 ₽</h4>
+												</div>
+											</div>
+											<div class="video-box__mobile-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+												<a class="button button_theme_yellow" href="#">Попробовать бесплатно</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="video-reviews-list__column column">
+									<div class="video-box video-box_small">
+										<div class="video-box__video-wrap" data-video>
+											<div class="video-box__poster lazy-background" data-sizes="auto" data-bgset="images/video-box-poster1.png">&nbsp;</div>
+											<video class="video-box__video lazy-img" data-src="video/image.mpg4" controls preload="none"><!-- <source src="video/image.mp4" type="video/mp4"> -->Your browser does not support the video tag.</video>
+										</div>
+										<div class="video-box__description content-advantages">
+											<div class="video-box__poster-title">
+												<div class="content-advantages__name">Курс</div>
+												<h4>Профессия <br> Интернет-маркетолог</h4>
+											</div>
+											<div class="video-box__description-row row">
+												<div class="column">
+													<div class="content-advantages__name">до обучения</div>
+													<h4>15.000 ₽</h4>
+												</div>
+												<div class="column">
+													<div class="content-advantages__name">после обучения</div>
+													<h4>60.000 ₽</h4>
+												</div>
+											</div>
+											<div class="video-box__mobile-content">
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+												<a class="button button_theme_yellow" href="#">Попробовать бесплатно</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<a class="result-courses__collapse-toggle button button_theme_icon" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+									<span class="icon-text align-items-center">
+										<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#repeat"></use>
+										</svg>
+										<div class="icon-text__text">Показать еще</div>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="learn-steps">
+						<div class="container-fluid">
+							<div class="learn-steps__title section-title text-center">
+								<h2>Как проходит обучение</h2>
+							</div>
+							<div class="learn-steps__box learn-steps-box">
+								<nav class="learn-steps__nav">
+									<ul data-slider-nav="learn-steps">
+										<li><span class="d-inline-block align-middle">Пройдите тест</span></li>
+										<li><span class="d-inline-block align-middle">Выберите программу</span></li>
+										<li><span class="d-inline-block align-middle">Пройдите обучение</span></li>
+										<li><span class="d-inline-block align-middle">Начнните работать</span></li>
+									</ul>
+								</nav>
+								<div class="learn-steps__slider owl-carousel owl-theme" data-slider="learn-steps">
+									<div class="learn-steps__item">
+										<div class="learn-steps__item__row row align-items-center">
+											<div class="learn-steps__column col-lg-8">
+												<div class="learn-steps__img learn-steps__img_size_first">
+													<img class="owl-lazy" data-src="images/learn-step1.svg" alt="">
+												</div>
+											</div>
+											<div class="col-lg-4">
+												<div class="content">
+													<h3>Пройдите тест</h3>
+													<p>Смотрите вебинары, выпонляйте <br> домашние задание когда вам <br> удобно. Все, что нужно для <br> учебы – ноутбук и интернет</p>
+													<a class="button button_theme_yellow" href="#">Пройти тест</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="learn-steps__item">
+										<div class="learn-steps__item__row row align-items-center">
+											<div class="learn-steps__column col-lg-8">
+												<div class="learn-steps__img">
+													<img class="owl-lazy" data-src="images/learn-step2.svg" alt="">
+												</div>
+											</div>
+											<div class="col-lg-4">
+												<div class="content">
+													<h3>Выберите программу</h3>
+													<p>Смотрите вебинары, выпонляйте <br> домашние задание когда вам <br> удобно. Все, что нужно для <br> учебы – ноутбук и интернет</p>
+													<a class="button button_theme_yellow" href="#">Пройти тест</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="learn-steps__item">
+										<div class="learn-steps__item__row row align-items-center">
+											<div class="learn-steps__column col-lg-8">
+												<div class="learn-steps__img">
+													<img class="owl-lazy" data-src="images/learn-step3.svg" alt="">
+												</div>
+											</div>
+											<div class="col-lg-4">
+												<div class="content">
+													<h3>Пройдите обучение</h3>
+													<p>Смотрите вебинары, выпонляйте <br> домашние задание когда вам <br> удобно. Все, что нужно для <br> учебы – ноутбук и интернет</p>
+													<a class="button button_theme_yellow" href="#">Пройти тест</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="learn-steps__item">
+										<div class="learn-steps__item__row row align-items-center">
+											<div class="learn-steps__column col-lg-8">
+												<div class="learn-steps__img">
+													<img class="owl-lazy" data-src="images/learn-step4.svg" alt="">
+												</div>
+											</div>
+											<div class="col-lg-4">
+												<div class="content">
+													<h3>Начните работать</h3>
+													<p>Смотрите вебинары, выпонляйте <br> домашние задание когда вам <br> удобно. Все, что нужно для <br> учебы – ноутбук и интернет</p>
+													<a class="button button_theme_yellow" href="#">Пройти тест</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="programs section-padding" id="programs">
+						<img class="programs__cluods lazy-img lazyload" data-sizes="auto" data-src="images/clouds.svg" alt="">
+						<div class="container-fluid">
+							<div class="section-title text-center">
+								<h2>Программы обучения</h2>
+							</div>
+							<div class="tabs">
+								<div class="text-center">
+									<div class="tabs__dropdown">
+										<button class="tabs__mobile-toggle button button_toggle" type="button">
+											<span>Все курсы</span>
+											<svg class="button__caret svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#caret-down"></use>
+											</svg>
+										</button>
+										<ul class="tabs__nav nav nav-tabs">
+											<li><a class="active" data-toggle="tab" href="#all">Все<span>189</span></a></li>
+											<li><a data-toggle="tab" href="#free">Бесплатно<span>30</span></a></li>
+											<li><a data-toggle="tab" href="#learn-inet">Освоение интернет-профессий<span>8</span></a></li>
+											<li><a data-toggle="tab" href="#others">Остальные<span>151</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="tabs__content tab-content">
+									<div id="all" class="tabs__pane tab-pane bounceInLeft active">
+										<div class="tabs__row row row_indents_s justify-content-center">
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img program-card__img_type_two">
+															<img class="lazy-img lazyload" data-sizes="auto" data-src="images/marketolog.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Интернет-маркетолог</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in program-card__in_background_two">
+														<div class="program-card__img">
+															<img class="lazy-img lazyload" data-sizes="auto" data-src="images/webdesigner.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Графический дизайнер</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img">
+															<img class="lazy-img lazyload" data-sizes="auto" data-src="images/personal-adviser.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Личный помощник</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="tabs__collapse row row_indents_s justify-content-center collapse" id="collapseExample3">
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img program-card__img_type_two">
+															<img src="images/marketolog.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Интернет-маркетолог</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in program-card__in_background_two">
+														<div class="program-card__img">
+															<img class="lazy-img lazyload" data-sizes="auto" data-src="images/webdesigner.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Графический дизайнер</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img">
+															<img class="lazy-img lazyload" data-sizes="auto" data-src="images/personal-adviser.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Личный помощник</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="text-center">
+											<a class="tabs__collapse-toggle button button_theme_icon" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+												<span class="icon-text align-items-center">
+													<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#repeat"></use>
+													</svg>
+													<div class="icon-text__text">Показать еще</div>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div id="free" class="tabs__pane tab-pane bounceInLeft">
+										<div class="tabs__row row row_indents_s justify-content-center">
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in program-card__in_background_two">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/webdesigner.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Графический дизайнер</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img program-card__img_type_two">
+															<img class="lazy-img" data-sizes="auto" data-src="images/marketolog.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Интернет-маркетолог</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/personal-adviser.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Личный помощник</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="tabs__collapse row row_indents_s justify-content-center collapse" id="collapseExample4">
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img program-card__img_type_two">
+															<img class="lazy-img" data-sizes="auto" data-src="images/marketolog.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Интернет-маркетолог</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in program-card__in_background_two">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/webdesigner.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Графический дизайнер</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/personal-adviser.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Личный помощник</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="text-center">
+											<a class="tabs__collapse-toggle button button_theme_icon" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">
+												<span class="icon-text align-items-center">
+													<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#repeat"></use>
+													</svg>
+													<div class="icon-text__text">Показать еще</div>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div id="learn-inet" class="tabs__pane tab-pane bounceInLeft">
+										<div class="tabs__row row row_indents_s justify-content-center">
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/personal-adviser.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Личный помощник</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in program-card__in_background_two">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/webdesigner.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Графический дизайнер</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img program-card__img_type_two">
+															<img class="lazy-img" data-sizes="auto" data-src="images/marketolog.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Интернет-маркетолог</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="tabs__collapse row row_indents_s justify-content-center collapse" id="collapseExample5">
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img program-card__img_type_two">
+															<img class="lazy-img" data-sizes="auto" data-src="images/marketolog.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Интернет-маркетолог</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in program-card__in_background_two">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/webdesigner.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Графический дизайнер</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img">
+															<img class="lazy-img lazyload" data-sizes="auto" data-src="images/personal-adviser.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Личный помощник</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="text-center">
+											<a class="tabs__collapse-toggle button button_theme_icon" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+												<span class="icon-text align-items-center">
+													<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#repeat"></use>
+													</svg>
+													<div class="icon-text__text">Показать еще</div>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div id="others" class="tabs__pane tab-pane bounceInLeft">
+										<div class="tabs__row row row_indents_s justify-content-center">
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img program-card__img_type_two">
+															<img class="lazy-img" data-sizes="auto" data-src="images/marketolog.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Интернет-маркетолог</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in program-card__in_background_two">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/webdesigner.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Графический дизайнер</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/personal-adviser.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Личный помощник</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="tabs__collapse row row_indents_s justify-content-center collapse" id="collapseExample6">
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img program-card__img_type_two">
+															<img class="lazy-img" data-sizes="auto" data-src="images/marketolog.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Интернет-маркетолог</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in program-card__in_background_two">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/webdesigner.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Графический дизайнер</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+											<div class="tabs__column column">
+												<a class="program-card" href="#">
+													<div class="program-card__in">
+														<div class="program-card__img">
+															<img class="lazy-img" data-sizes="auto" data-src="images/personal-adviser.svg" alt="">
+														</div>
+														<div class="program-card__content content">
+															<h4>Профессия <br> Личный помощник</h4>
+															<p>Получи за 12 недель востребо- <br> ванную и высокооплачиваемую <br> интернет-профессию.</p>
+															<div class="row row_indents_m justify-content-between">
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_20">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#clock"></use>
+																		</svg>
+																		<div class="icon-text__text">3 месяца</div>
+																	</div>
+																</div>
+																<div class="column">
+																	<div class="icon-text">
+																		<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+																			<use xlink:href="images/svg-sprite/svgSprite.svg#stacked-layers"></use>
+																		</svg>
+																		<div class="icon-text__text">32 модуля</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="text-center">
+											<a class="tabs__collapse-toggle button button_theme_icon" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6">
+												<span class="icon-text align-items-center">
+													<svg class="icon-text__icon svg-icon svg-icon_font_size_25">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#repeat"></use>
+													</svg>
+													<div class="icon-text__text">Показать еще</div>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="help-to-choose" id="case">
+						<div class="help-to-choose__sticker">
+							<img class="lazy-img lazyload" data-sizes="auto" data-src="images/sticker.png" alt="">
+						</div>
+						<div class="help-to-choose__container container-fluid">
+							<div class="help-to-choose__row row align-items-end no-gutters">
+								<div class="help-to-choose__column col-lg-5">
+									<div class="help-to-choose__content content">
+										<h2>Не знаете, какую <br> профессию выбрать?</h2>
+										<div>Пройдите бесплатный тест и узнайте, <br> какие профессии вам подходят </div>
+										<a class="button button_theme_yellow" href="steps.html">Пройти тест</a>
+									</div>
+								</div>
+								<div class="help-to-choose__column col-lg-7">
+									<div class="help-to-choose__column-img">
+										<img class="lazy-img lazyload" data-sizes="auto" data-src="images/woman.svg" alt="">
+									</div>
+								</div>
+							</div>
+							<div class="help-to-choose__sertificate result-courses">
+								<div class="result-courses__row row">
+									<div class="result-courses__column col-lg-7 d-flex flex-column justify-content-center position-relative">
+										<div class="result-courses__sertificate">
+											<img class="lazy-img lazyload" data-sizes="auto" data-src="images/sertificate.png" alt="">
+										</div>
+									</div>
+									<div class="result-courses__column result-courses__column_content col-lg-5">
+										<div class="result-courses__content">
+											<div class="result-courses__content-in content">
+												<h3>Получите свидетельство <br> установленного образца <br> и сертификат</h3>
+												<p>Образовательная деятельность ведется <br> на основании государственной лицензии <br> №037356 от 06 апреля 2016 г.</p>
+												<div class="license">
+													<div class="row row_indents_s justify-content-center justify-content-lg-start align-items-center">
+														<div class="license__column">
+															<img class="lazy-img lazyload" data-sizes="auto" data-src="images/license-img.png" alt="">
+														</div>
+														<div class="license__column">
+															<div class="license__content">
+																<p><strong>Государственная <br> лицензия</strong></p>
+																<a class="license__link" href="#" data-toggle="modal" data-target="#modalLicense">Смотреть</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="partners">
+						<div class="partners__container container-fluid">
+							<div class="partners__row row align-items-end justify-content-between">
+								<div class="partners__column col-sm-12 col-lg flex-lg-grow-0">
+									<div class="partners__title">
+										<div>15+</div>
+										<h3>Партнёров</h3>
+									</div>
+									<div class="partners__mobile-title text-center">
+										<h2>Партнеры</h2>
+										<div>Более 15 партнеров</div>
+									</div>
+								</div>
+								<div class="partners__column col-sm-6 col-lg flex-grow-lg-0">
+									<img class="lazy-img lazyload" data-sizes="auto" data-src="images/sber.png" alt="" width="140px">
+								</div>
+								<div class="partners__column col-sm-6 col-lg flex-grow-lg-0">
+									<img class="lazy-img lazyload" data-sizes="auto" data-src="images/megafon.png" alt="" width="140px">
+								</div>
+								<div class="partners__column col-sm-6 col-lg flex-grow-lg-0">
+									<img class="lazy-img lazyload" data-sizes="auto" data-src="images/mts.png" alt="" width="100px">
+								</div>
+								<div class="partners__column col-sm-6 col-lg flex-grow-lg-0">
+									<img class="lazy-img lazyload" data-sizes="auto" data-src="images/yota.png" alt="" width="100px">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="faq">
+						<div class="faq__container container-fluid">
+							<div class="faq__row row">
+								<div class="faq__column col-xl-5">
+									<div class="faq__title content text-center text-lg-left">
+										<h2>Часто <br> задаваемые <br> вопросы</h2>
+										<div>Не нашли ответа на свой вопрос? <br> Задайте его нашим специалистам</div>
+										<a class="button button_theme_yellow" href="#" data-toggle="modal" data-target="#modalOffer">Задать вопрос</a>
+									</div>
+								</div>
+								<div class="faq__column col-xl-7">
+									<div class="collapse-group" id="accordion">
+										<div class="collapse-item">
+											<a class="collapse-item__head collapsed" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7">
+												<h5>В каких профессиях мне пригодятся знания?</h5>
+												<span class="collapse-item__toggle">
+													<svg class="svg-icon svg-icon_fon_size_10">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+													</svg>
+												</span>
+											</a>
+											<div class="collapse-item__collapse collapse" id="collapseExample7" data-parent="#accordion">
+												<div class="collapse-item__collapse-in">Для реализации практической части программы желательно <br> иметь базовые знания Adobe Photoshop и After Effects.</div>
+											</div>
+										</div>
+										<div class="collapse-item">
+											<a class="collapse-item__head collapsed" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8">
+												<h5>Подойдёт ли мне эта программа?</h5>
+												<span class="collapse-item__toggle">
+													<svg class="svg-icon svg-icon_fon_size_10">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+													</svg>
+												</span>
+											</a>
+											<div class="collapse-item__collapse collapse" id="collapseExample8" data-parent="#accordion">
+												<div class="collapse-item__collapse-in">Для реализации практической части программы желательно <br> иметь базовые знания Adobe Photoshop и After Effects.</div>
+											</div>
+										</div>
+										<div class="collapse-item">
+											<a class="collapse-item__head collapsed" data-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample9">
+												<h5>Как, когда и в какое время я буду учиться?</h5>
+												<span class="collapse-item__toggle">
+													<svg class="svg-icon svg-icon_fon_size_10">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+													</svg>
+												</span>
+											</a>
+											<div class="collapse-item__collapse collapse" id="collapseExample9" data-parent="#accordion">
+												<div class="collapse-item__collapse-in">Для реализации практической части программы желательно <br> иметь базовые знания Adobe Photoshop и After Effects.</div>
+											</div>
+										</div>
+										<div class="collapse-item">
+											<a class="collapse-item__head collapsed" data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample10">
+												<h5>В каких профессиях мне пригодятся знания?</h5>
+												<span class="collapse-item__toggle">
+													<svg class="svg-icon svg-icon_fon_size_10">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+													</svg>
+												</span>
+											</a>
+											<div class="collapse-item__collapse collapse" id="collapseExample10" data-parent="#accordion">
+												<div class="collapse-item__collapse-in">Для реализации практической части программы желательно <br> иметь базовые знания Adobe Photoshop и After Effects.</div>
+											</div>
+										</div>
+										<div class="collapse-item">
+											<a class="collapse-item__head collapsed" data-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample11">
+												<h5>Как, когда и в какое время я буду учиться?</h5>
+												<span class="collapse-item__toggle">
+													<svg class="svg-icon svg-icon_fon_size_10">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+													</svg>
+												</span>
+											</a>
+											<div class="collapse-item__collapse collapse" id="collapseExample11" data-parent="#accordion">
+												<div class="collapse-item__collapse-in">Для реализации практической части программы желательно <br> иметь базовые знания Adobe Photoshop и After Effects.</div>
+											</div>
+										</div>
+										<div class="collapse-item">
+											<a class="collapse-item__head" data-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample12">
+												<h5>В каких профессиях мне пригодятся знания?</h5>
+												<span class="collapse-item__toggle">
+													<svg class="svg-icon svg-icon_fon_size_10">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+													</svg>
+												</span>
+											</a>
+											<div class="collapse-item__collapse collapse show" id="collapseExample12" data-parent="#accordion">
+												<div class="collapse-item__collapse-in">
+													Да, мы выдаем сертификат <br> государственного образца <br> каждому студенту
+													<div class="collapse-item__license license">
+														<div class="row row_indents_s justify-content-center justify-content-lg-start align-items-center">
+															<div class="license__column">
+																<img src="images/license-img.png" alt="
+																">
+															</div>
+															<div class="license__column">
+																<div class="license__content">
+																	<p><strong>Диплом <br> государственного <br> образца</strong></p>
+																	<a class="license__link" href="#" data-toggle="modal" data-target="#modalLicense">Смотреть</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="faq__questions">
+								<img src="images/faq-icon.png" alt="">
+								<div>Не нашли ответа на свой <br> вопрос? Задайте его нашим <br> специалистам</div>
+								<a class="button" href="#">Задать вопрос</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="start-learn">
+					<div class="start-learn__background">
+						<img class="lazy-img lazyload" data-sizes="auto" data-src="images/clouds2.svg" alt="">
+					</div>
+					<div class="start-learn__cloud-small start-learn__cloud-small_position_first">
+						<img class="lazy-img lazyload" data-sizes="auto" data-src="images/small-cloud.png" alt="">
+					</div>
+					<div class="start-learn__cloud-small start-learn__cloud-small_position_second">
+						<img class="lazy-img lazyload" data-sizes="auto" data-src="images/small-cloud.png" alt="">
+					</div>
+					<div class="start-learn__cloud-small start-learn__cloud-small_position_third">
+						<img class="lazy-img lazyload" data-sizes="auto" data-src="images/small-cloud.png" alt="">
+					</div>
+					<div class="start-learn__cloud-small start-learn__cloud-small_position_fourth">
+						<img class="lazy-img lazyload" data-sizes="auto" data-src="images/small-cloud.png" alt="">
+					</div>
+					<div class="start-learn__cloud-small start-learn__cloud-small_position_fifth">
+						<img class="lazy-img lazyload" data-sizes="auto" data-src="images/small-cloud.png" alt="">
+					</div>
+					<div class="start-learn__plant">
+						<img class="lazy-img lazyload" data-sizes="auto" data-src="images/plant.png" alt="">
+					</div>
+					<div class="start-learn__container container-fluid">
+						<div class="start-learn__row row flex-column-reverse flex-lg-row">
+							<div class="start-learn__column column col-lg-5">
+								<div class="start-learn__content-img">
+									<img class="lazy-img lazyload" data-sizes="auto" data-src="images/girllast.svg" alt="">
+								</div>
+							</div>
+							<div class="start-learn__column column col-lg-7">
+								<div class="content">
+									<h2>Начните обучение сегодня</h2>
+									<div>Заполните заявку на подбор обучения <br> и получите первое занятие бесплатно!</div>
+								<a class="button button_theme_yellow" href="#" data-toggle="modal" data-target="#modalOffer">Отправить заявку</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="footer__container container-fluid">
+						<div class="footer__head d-flex flex-column align-items-center flex-lg-row justify-content-lg-between align-items-lg-center">
+							<div class="footer__column column footer__column_type_one">
+								<a class="footer__logo logo" href="#">
+									<img class="lazy-img lazyload" data-sizes="auto" data-src="images/logo.png" alt="">
+									<span>New Business Era</span>
+								</a>
+							</div>
+							<div class="footer__column column footer__column_type_two">
+								<a class="link link_email" href="mailto:info@nbe.bz">info@nbe.bz</a>
+							</div>
+							<div class="footer__column column footer__column_type_three">
+								<div class="phone phone_bigger">
+									<a class="phone__link d-lg-flex flex-lg-nowrap align-items-lg-center" href="tel:+88005506534">
+										<svg class="phone__icon svg-icon">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#telephone"></use>
+										</svg>
+										<span>8 800 550 65 34</span>
+									</a>
+									<div class="phone__text">Звонок бесплатный по России</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+							<div class="footer__column column footer__column_type_one">
+								<div class="row d-block d-lg-flex flex-lg-row justify-content-lg-around justify-content-xl-between">
+									<div class="footer-nav column">
+										<h6 class="collapsed" data-toggle="collapse" href="#f-1" role="button" aria-expanded="false" aria-controls="f-1">
+											<span>о компании</span>
+											<svg class="svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+											</svg>
+										</h6>
+										<ul class="collapse" id="f-1">
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Партнерам</a></li>
+											<li><a href="#">Экспертам</a></li>
+											<li><a href="#">Вакансии</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</div>
+									<div class="footer-nav column">
+										<h6 class="collapsed" data-toggle="collapse" href="#f-2" role="button" aria-expanded="false" aria-controls="f-2">
+											<span>наши курсы</span>
+											<svg class="svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+											</svg>
+										</h6>
+										<ul class="collapse" id="f-2">
+											<li><a href="#">Интернет-маркетинг</a></li>
+											<li><a href="#">Бизнес и управление</a></li>
+											<li><a href="#">Дизайн и UX</a></li>
+											<li><a href="#">Программирование</a></li>
+											<li><a href="#">Data Science</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="footer__column column footer__column_type_two">
+								<div class="footer-nav">
+									<h6 class="collapsed" data-toggle="collapse" href="#f-3" role="button" aria-expanded="false" aria-controls="f-3">
+										<span>медиа и реклама</span>
+										<svg class="svg-icon">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+										</svg>
+									</h6>
+									<ul class="collapse" id="f-3">
+										<li><a href="#">Блог компании</a></li>
+										<li><a href="#">Правовая информация</a></li>
+										<li><a href="#">Центр развития карьеры</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer__column column footer__column_type_three d-flex flex-column-reverse align-items-center d-lg-block">
+								<div class="footer__social-wrap">
+									<div class="footer__social-title">Мы в соц.сетях</div>
+									<ul class="footer__social social">
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#vk"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#youtube"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#telegram"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#instagram"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="footer__license license">
+									<div class="row row_indents_s align-items-center justify-content-center">
+										<div class="license__column">
+											<img class="lazy-img lazyload" data-sizes="auto" data-src="images/license-img.png" alt="">
+										</div>
+										<div class="license__column">
+											<div class="license__content">
+												<p><strong>Государственная <br> лицензия</strong></p>
+												<a class="license__link" data-toggle="modal" data-target="#modalLicense" href="#">Смотреть</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<div class="mailing">
+					<div class="mailing__container container-fluid">
+						<div class="mailing__head d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+							<div class="mailing__column mailing__column_type_one">
+								<div class="mailing__title">
+									<h4>Рассылка <br> новостей</h4>
+								</div>
+							</div>
+							<div class="mailing__column mailing__column_type_two">
+								<div class="mailing__txt">Подпишитесь на обновления, чтобы узнавать о старте курсов, <br> специальных предложениях и других мероприятиях</div>
+							</div>
+							<div class="mailing__column mailing__column_type_three">
+								<div class="form-group form-group_mailing">
+									<!-- <script id="5787d815b7aa2e6e25bd15d909490f1d34bceb5a" src="http://kurs.nbe.bz/pl/lite/widget/script?id=77144" defer></script> -->
+								</div>
+								<div class="mailing__checkbox checkbox checkbox_submit d-flex flex-column align-items-start">
+									<input class="checkbox__input input-hidden" type="checkbox" id="ch5" checked="" data-checkbox="">
+									<label class="checkbox__label" for="ch5">
+										<svg class="checkbox__checked svg-icon">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#check"></use>
+										</svg>
+										<span class="checkbox__label-in">Даю согласие обработку персональных данных, <br> согласно с <a href="#">политикой конфиденциальности</a></span>
+									</label>
+									<input class="checkbox__submit button button_theme_yellow order-first" type="submit" value="Далее">
+									<div class="checkbox__alert form-alert form-alert_error order-last">Дайте согласие на обработку персональных данных</div>
+								</div>
+							</div>
+						</div>
+						<div class="mailing__tech d-flex flex-column-reverse flex-lg-row justify-content-lg-between">
+							<div class="mailing__column mailing__column_type_one">
+								<div class="mailing__copt copy">
+									New Business Era <br>
+									© 2016–2018
+								</div>
+							</div>
+							<div class="mailing__column mailing__column_type_two">
+								<div class="mailing__about">
+									ИП ЧЕВЫЧАЛОВ ДМИТРИЙ ВИТАЛЬЕВИЧ <br>
+									ИНН:634503083817 <br>
+									ОГРНИП: 317631300086731
+								</div>
+							</div>
+							<div class="mailing__column mailing__column_type_three">
+								<div class="mailing__license license">
+									<a class="license__link" href="#" data-toggle="modal" data-target="#modalPolytic">Политика конфиденциальности</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal" id="modalOffer" tabindex="-1" role="dialog" aria-labelledby="modalOfferTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal__quiz quiz modal-content fadeIn animated" data-validate="form">
+							<button type="button" class="quiz__close close" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon svg-icon_font_size_30">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="quiz__step-title content">
+								<h2>Заполните форму</h2>
+							</div>
+							<form>
+								<div class="form-group">
+									<label class="form-group__label label" for="in1">Фамилия, имя, отчество</label>
+									<input class="form-control" type="text" id="in1" name="name" placeholder="Петров Алексей Викторович" data-msg-required="Поле не может быть пустым. Укажите фамилию, имя и отчество (если есть)" data-rule-required="true">
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label class="form-group__label label" for="in2">E-mail</label>
+											<input class="form-control" type="email" name="email" id="in2" placeholder="example@mail.com" data-msg-required="Недопустимый формат" data-rule-required="true">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label class="form-group__label label" for="in3">Мобильный телефон</label>
+											<input class="form-control" type="tel" id="in3" name="tel" placeholder="+7" data-mask="0000000000000000" data-msg-required="Укажите номер телефона" data-rule-required="true" autocomplete="off" maxlength="16">
+										</div>
+									</div>
+								</div>
+								<div class="form-group text-right">
+									<input class="button button_theme_yellow" type="submit" value="Отправить">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal_thanks" id="modalThanks" tabindex="-1" role="dialog" aria-labelledby="modalThanksTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal__quiz quiz modal-content fadeIn animated" data-validate="form">
+							<button type="button" class="quiz__close close" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon svg-icon_font_size_30">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="quiz__step-title content text-center">
+								<h2>Спасибо! Заявка успешно отправлена</h2>
+								<p>Мы уже подбираем подходящие  направления и скоро перезвоним вам для уточнения деталей</p>
+								<img class="lazy-img" data-sizes="auto" data-src="images/thanksModal.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal_polytic" id="modalPolytic" tabindex="-1" role="dialog" aria-labelledby="modalPolyticTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal__quiz quiz modal-content fadeInLeft animated" data-validate="form">
+							<button type="button" class="quiz__close close" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon svg-icon_font_size_30">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="quiz__step-title content">
+								<h2>Политика конфедициальности</h2>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, veritatis quisquam minima atque facere accusantium cupiditate voluptate modi error dicta neque dolorum dolor dolore, odio iure veniam. Earum quod animi unde ad quibusdam, modi tenetur molestiae ipsa impedit, ipsum corporis placeat tempore cumque. Suscipit modi quas ex, voluptatem unde nesciunt possimus recusandae ullam commodi, tempora adipisci dicta libero soluta voluptatum labore, voluptates optio. Ab, culpa ullam deleniti amet dicta rem perferendis consequatur eum, labore error consequuntur sit similique omnis fuga laudantium tempora sequi expedita deserunt molestias. Velit facere pariatur aspernatur iste deserunt, neque optio fugiat accusantium repudiandae eveniet, cupiditate maxime ad quidem quae sit natus? Ipsa quisquam quos, earum expedita doloribus, consectetur ratione deserunt atque reprehenderit iusto velit. Atque officia velit aperiam. Magni odio, deleniti aspernatur harum ex quasi. Rem consequatur vel nobis maxime ipsa nesciunt voluptates fuga fugit iste animi molestias accusamus, odit excepturi facilis quibusdam omnis autem quasi dolorem deleniti mollitia facere laboriosam delectus temporibus quo unde. Facilis ea nobis quasi deleniti suscipit reprehenderit laudantium commodi, repellat magnam ex adipisci dolorum perspiciatis molestias error, quas earum vitae qui ratione molestiae autem. Impedit optio magni rem eius quos quod inventore ab repudiandae consequuntur nulla in fugit, earum assumenda soluta veritatis hic ipsa molestias velit doloribus sint illum dignissimos ipsam blanditiis quibusdam. Repellendus alias expedita dolorum iure illo adipisci aliquid. Quam fugit, nobis magnam libero culpa soluta, voluptatem quaerat illo esse veritatis maiores vel error molestiae delectus porro pariatur totam a impedit ut numquam, rem iusto minima reiciendis. Aliquam dolores aspernatur officiis consectetur iste tempore veniam, accusantium minus molestias, sed, assumenda iusto quo repellendus quod earum quaerat sint consequuntur? Fugiat quia debitis animi temporibus eum minima sint veniam sequi, aspernatur itaque error commodi placeat repudiandae natus iste tempora corporis cum delectus. Nesciunt, ea? Vero dolorum, placeat a! Voluptates tempore voluptatum cumque, eum a possimus distinctio omnis. Deleniti, nisi quaerat! Rerum incidunt voluptatibus nulla dolor sit cumque minus, nam sunt dolore, sapiente assumenda delectus accusamus consequuntur veniam pariatur unde officia debitis perferendis cupiditate, tenetur maiores. Eaque non voluptates, provident mollitia minima explicabo cum, facilis ratione perferendis modi tempora recusandae consequatur dolorem voluptate vero inventore harum magni, reiciendis, officiis sapiente architecto. Aliquam illo debitis rerum quidem inventore ea omnis molestias mollitia maiores, assumenda dignissimos veritatis vel laboriosam a, et ex aliquid eveniet adipisci odio tenetur, libero deserunt delectus repellendus sed. Nihil vitae explicabo alias culpa eveniet fugit cumque ab autem suscipit neque laboriosam harum ipsa, rem voluptate cum molestias, voluptatum ratione, quibusdam minus labore! Esse libero eos odit ex necessitatibus recusandae similique quae, fuga earum quos consequuntur consequatur qui. Labore inventore officia non iste. Libero, repudiandae porro ratione, quia maiores cumque maxime iure quidem sit fuga pariatur ipsa officiis qui dignissimos blanditiis accusantium nulla. Hic quam eum blanditiis accusantium, architecto, praesentium dolorem ab itaque porro quasi incidunt vel nisi fugit sint consectetur eius nulla possimus quibusdam. Modi eveniet, id nulla laborum suscipit blanditiis quidem tempora natus ipsum magni, ratione obcaecati labore porro provident, voluptatum iusto eum cumque rerum maxime culpa molestiae. Iure magnam sint expedita. Sit animi alias ipsum mollitia laboriosam hic quia veritatis aperiam expedita eos perferendis voluptatibus repudiandae maxime, nisi amet velit nihil, deleniti dolore tenetur. Iure veritatis nihil velit omnis, officiis possimus in ex vero ullam rem consectetur quasi animi, tempora mollitia consequuntur ut at libero. Earum aspernatur amet cum facere, architecto soluta numquam sint sequi, voluptatum perferendis maiores laborum perspiciatis possimus, ex, fugit vel? Voluptatum expedita necessitatibus aliquam architecto dicta reiciendis quod sapiente numquam iste quo aperiam consequatur ducimus, quae error quia nesciunt quis molestias ratione, officia a dolorum, quibusdam. Necessitatibus, consequatur vero aperiam ipsum in aliquam expedita numquam officia ullam quisquam odio quis quae saepe explicabo autem assumenda, nihil officiis minima nisi enim. Eius, dolore velit fugiat voluptatum esse quasi provident laboriosam nemo aspernatur eaque, tempora quae sequi! Nihil, vero quidem quos voluptates aspernatur, voluptatem consequuntur dolorem quas iusto eligendi consectetur officiis unde iure sequi molestias modi natus. Saepe quis cupiditate quos voluptatibus omnis iusto ducimus quasi modi ipsam veniam. Reiciendis commodi adipisci nisi maxime ut earum quasi quae doloribus cum, esse praesentium id inventore tempora facere vel porro officia pariatur alias fugit deleniti veniam ipsum. Repellendus magni voluptatum nam, debitis perferendis praesentium temporibus aliquid assumenda autem, deserunt nisi neque eum consequuntur facilis nostrum. Voluptatum impedit eligendi vitae natus enim aliquid nemo! Quis iure facilis cumque quisquam ipsum omnis? Deleniti, nemo repellendus earum sequi enim vel, corrupti, natus sint consequuntur nobis iure temporibus aspernatur dignissimos dicta. Commodi ratione vitae eum natus. Vero, excepturi fugiat eaque repudiandae nesciunt doloribus a recusandae nihil error maxime ab veritatis odio asperiores. Culpa nemo consequuntur architecto ipsum, ullam commodi beatae placeat nostrum magnam explicabo molestiae, vel tempore enim, voluptatem ipsa esse aspernatur! Sapiente sunt numquam corrupti nesciunt deleniti cum! Minima iure tenetur dolorem voluptatum deleniti vel, perferendis, enim? Adipisci itaque error, aperiam ut a quibusdam quidem doloremque alias dolorum debitis. Rem eveniet ad, placeat itaque. Obcaecati deleniti fuga totam itaque aut. Pariatur modi explicabo cumque velit nesciunt consectetur harum, illum possimus. Ipsa fugiat, aliquam distinctio officiis animi, alias, rerum tempora placeat itaque, sed optio magni! Dicta odit ab fugit nisi exercitationem cumque atque obcaecati consequuntur saepe similique, ipsum sunt aperiam nostrum maxime nulla veritatis. Eius vel, repellendus est dignissimos modi architecto, amet voluptatem cumque totam. Nulla necessitatibus autem ex, asperiores sequi velit! Nostrum cumque nemo blanditiis debitis nisi magni, nihil neque harum eligendi, incidunt, animi. A inventore explicabo aspernatur error molestias tenetur magni, veniam aperiam cum earum commodi eveniet culpa dolor facilis ratione odio nam ipsam qui. Dolore exercitationem unde magnam obcaecati voluptatem dolores voluptates quis cumque numquam et laboriosam corporis, eveniet mollitia? Quidem tempore ullam nobis. Quisquam nihil eligendi accusantium illum quidem, commodi, rem quibusdam voluptas at dolores debitis magnam ad quis odio quo dolorum nemo expedita repellendus unde vel quod necessitatibus, corporis atque earum. Expedita deleniti ut voluptatum fuga, pariatur nostrum aliquid error hic, velit commodi consequatur quas quasi aperiam quis! Molestias quidem non nulla at iure amet numquam consectetur porro. Sequi, distinctio asperiores animi commodi sed itaque expedita laboriosam!
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal_license" id="modalLicense" tabindex="-1" role="dialog" aria-labelledby="modalLicenseTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal__quiz quiz modal-content fadeIn animated" data-validate="form">
+							<button type="button" class="quiz__close close" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon svg-icon_font_size_30">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="quiz__step-title content text-center">
+								<h2>Лицензия</h2>
+								<img class="lazy-img" data-sizes="auto" data-src="images/sertificate.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script async>
+			function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+		
+			if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+				loadJS("https://afarkas.github.io/lazysizes/plugins/respimg/ls.respimg.min.js");
+			};
+				var lazy = function lazy() {
+				document.addEventListener('lazyloaded', function (e)  {
+					e.target.parentNode.classList.add('lazy-image-loaded');
+					e.target.parentNode.classList.remove('lazy-loading');
+				});
+			}
+			lazy();
+		</script>
+		<script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js" async></script>
+		<script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/vendor.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

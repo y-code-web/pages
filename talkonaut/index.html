@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="theme-color" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" type="image/png" href="favicon-16x16.png">
+		<link rel="icon" type="image/png" href="favicon-32x32.png">
+		<link rel="stylesheet" type="text/css" href="css/vendor.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script>
+			document.createElement( "picture" );
+		</script>
+		<title>Talkonaut</title>
+		<script src="js/libs/jquery.js" defer></script>
+		<script src="js/libs/popper.js" defer></script>
+		<script src="js/libs/bootstrap.js" defer></script>
+		<!-- <script src="js/libs/moment.js" defer></script> -->
+		<!-- <script src="js/libs/tempusdominus-bootstrap-4.min.js" defer></script> -->
+		<!-- <script src="js/libs/picturefill.js" defer></script> -->
+		<script src="js/libs/svg4everybody.js" defer></script>
+		<script src="js/libs/jquery.mousewheel.js" defer></script>
+		<script src="js/libs/jquery.mCustomScrollbar.js" defer></script>
+		<!-- <script src="js/libs/microplugin.js" defer></script> -->
+		<!-- <script src="js/libs/sifter.js" defer></script> -->
+		<!-- <script src="js/libs/selectize.js" defer></script> -->
+		<script src="js/main.js" defer></script>
+	</head>
+	<body data-spy="scroll" data-target="#navbar-example3">
+		<div class="wrapper">
+			<div class="wrapper__in">
+				<header class="header">
+					<div class="container-fluid">
+						<div class="row align-items-center justify-content-between">
+							<div class="column column_margin_top_5 column_margin_bottom_5">
+								<a href="#" class="logo">
+									<img src="images/content/logo.svg" alt="">
+								</a>
+							</div>
+							<div class="header__menu menu column column_margin_top_5 column_margin_bottom_5 ml-auto" data-id="menu">
+								<div class="menu__content">
+									<button class="menu__close close" type="button" data-close="menu">
+										<svg class="svg-icon svg-icon_font_size_25">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+										</svg>
+									</button>
+									<div class="menu__content-in scroll-aside-style" data-scroll="axisY">
+										<nav class="navbar" id="navbar-example3">
+											<ul class="list-clr nav nav-pills">
+												<li class="nav-item">
+													<a href="#about" class="nav-link active">Opportunities</a>
+												</li>
+												<li class="nav-item">
+													<a href="#tariffs" class="nav-link">Tariffs</a>
+												</li>
+												<li class="nav-item">
+													<a href="#contacts" class="nav-link">Contacts</a>
+												</li>
+											</ul>
+										</nav>
+										<a class="menu__call button button_blue d-lg-none" href="#">Call me</a>
+									</div>
+								</div>
+							</div>
+							<div class="column column_margin_top_5 column_margin_bottom_5 ml-sm-auto ml-lg-0 d-none d-lg-block">
+								<a class="button button_border" href="#">Call me</a>
+							</div>
+							<div class="column column_margin_top_5 column_margin_bottom_5 d-lg-none">
+								<button class="button button_clr" type="button" data-open="menu">
+									<svg class="svg-icon svg-icon_color_white svg-icon_font_size_25">
+										<use xlink:href="images/svg-sprite/svgSprite.svg#menu"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="wrapper__content d-flex flex-column">
+					<div class="front d-flex flex-column" style="background-image: url(images/front-bg@2x.png);">
+						<div class="container-fluid flex-fill d-flex flex-column">
+							<div class="row align-items-center flex-fill">
+								<div class="column column_padding_top_120 column_sm_padding_top_90 column_padding_bottom_30 col-11 col-sm-6">
+									<h2>Online assistant</h2>
+									<div class="text">to increase sales on your site, connect for free and forever!</div>
+									<div class="front__links-box">
+										<div class="row row_indents_m justify-content-between">
+											<a class="link link_margin_top_5 link_margin_bottom_5 link_color_blue" href="#">+ call back</a>
+											<a class="link link_margin_top_5 link_margin_bottom_5 link_color_blue" href="#">+ telegram bot</a>
+										</div>
+									</div>
+									<a class="button button_box-shadow button_blue" href="#">Registration</a>
+									<br>
+									<div class="text text_margin_top_20 text_font_size">we will do everything for you, install <br> and configure the service free of charge</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="about" id="about">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="section-title col-md-8 text-center ml-auto mr-auto">
+									<h2>Talkonaut — omni-channel online messenger</h2>
+									<div class="text">help people to have a pleasant experience with you</div>
+								</div>
+								<div class="about__txt col-md-6">Website, online consultant, social networks, messengers, e-mail are not linked. It takes a lot of time and effort to control employees and find mistakes. Part of the data about customers, their purchases and preferences does not reach CRM. Employees confuse new and regular customers, and they feel unnecessary. </div>
+								<div class="about__txt col-md-6">
+									We offer a solution - omnichannel. Omnichannel is a service on the side of the company, offering mutual integration of disparate communication channels into a single system, in order to ensure seamless and continuous communication with the client.
+								</div>
+							</div>
+							<div class="about__foot">
+								<img src="images/about-img.jpg" alt="">
+								<img class="about__plains" src="images/plains.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="advantages-banner" style="background-image: url('images/advantages-banner.png');">
+						<div class="advantages-banner__container container-fluid">
+							<div class="advantages-banner__title section-title text-center">
+								<h2>With Talkonaut's omnichannel</h2>
+								<p>you control the situation and influence the outcome</p>
+							</div>
+						</div>
+					</div>
+					<div class="advantages">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="section-title col-md-8 text-center ml-auto mr-auto">
+									<h2>Ten channels</h2>
+									<div class="text">for customer support and sales organization</div>
+									<img class="section-title__devider" src="images/title-devider.png" alt="">
+								</div>
+							</div>
+							<div class="advantages__tabs row d-lg-block">
+								<div class="advantages__tabs-column advantages__tabs-column_small col-lg-12">
+									<ul class="advantages-tabs nav nav-tabs" id="myTab" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+												<span class="nav-img">
+													<img src="images/robot.svg" alt="" width="70px">
+													<img src="images/robot-white.svg" alt="" width="70px">
+												</span>
+												<span class="nav-link__txt">Chat for the site</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+												<span class="nav-img">
+													<img src="images/feedback-tab.svg" alt="" width="80px">
+													<img src="images/feedback-tab-white.svg" alt="" width="80px">
+												</span>
+												<span class="nav-link__txt">Feedback form</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+												<span class="nav-img">
+													<img src="images/request.svg" alt="" width="94px">
+													<img src="images/request-white.svg" alt="" width="94px">
+												</span>
+												<span class="nav-link__txt">Callback order</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="contact-tab" data-toggle="tab" href="#test" role="tab" aria-controls="contact" aria-selected="false">
+												<span class="nav-img">
+													<img src="images/assistant.svg" alt="" width="51px">
+													<img src="images/assistant-white.svg" alt="" width="51px">
+												</span>
+												<span class="nav-link__txt">Telegram bot</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="advantages__content-column advantages-content tab-content col-lg-12" id="myTabContent">
+									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="advantages-content__img advantages-content__img_position_one">
+													<img src="images/content/tab-img1.png" alt="">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="advantages-content__content">
+													<h3>Chat for the site</h3>
+													For those who want not only to communicate with customers in real time, but also to receive additional orders, in addition to telephone and written requests. <br><br>
+													It allows you to quickly advise visitors to the site until they have gone to competitors, as well as to unload the phone line and improve the quality of service. <br><br>
+													<a class="button button_box-shadow button_blue" href="#">Read more</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="advantages-content__img">
+													<img src="images/content/tab-img2.png" alt="">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="advantages-content__content">
+													<h3>Feedback form</h3>
+													A completely new approach to the processing of applications from the site. The visitor receives a call immediately after filling out the application. <br><br>
+													<a class="button button_box-shadow button_blue" href="#">Read more</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="advantages-content__img">
+													<img src="images/content/tab-img3.png" alt="">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="advantages-content__content">
+													<h3>Callback order</h3>
+													Delicate automatic call service does not prevent visitors from viewing the site and unobtrusively offers a quick and free way to contact you. <br><br>
+													<a class="button button_box-shadow button_blue" href="#">Read more</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="test" role="tabpanel" aria-labelledby="contact-tab">
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="advantages-content__img">
+													<img src="images/content/tab-img4.png" alt="">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="advantages-content__content">
+													<h3>Telegram Bot</h3>
+													The bot automates the process and will be attractive for users in terms of interactivity. There are primitive bots-having a limited number of commands, and advanced — robots. The latter category is learning with the help of artificial intelligence and every day better understands human needs. <br><br>
+													<a class="button button_box-shadow button_blue" href="#">Read more</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="organize-work">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="organize-work__title section-title col-md-8 text-center ml-auto mr-auto">
+									<h2>Organize work with clients</h2>
+									<div class="text">when you have a better organized work big sales are inevitable</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="organize-work-card__column organize-work-card col-sm-6 col-lg-3">
+									<div class="organize-work-card__img">
+										<img src="images/content/hierarchical-structure.svg" alt="" width="65px">
+									</div>
+									<strong class="organize-work-card__title">Correct omnichanality</strong>
+									Qualitatevely new approach to work with client. Instead of chaos from channels and applications - a single system for managing business processing and communicating with customer
+								</div>
+								<div class="organize-work-card__column organize-work-card col-sm-6 col-lg-3">
+									<div class="organize-work-card__img">
+										<img src="images/content/online-question.svg" alt="" width="65px">
+									</div>
+									<strong class="organize-work-card__title">Operator application</strong>
+									One window for all channel — from chat to instant messenger. Tools of labor automation. Work with CRM-card of the client
+								</div>
+								<div class="organize-work-card__column organize-work-card col-sm-6 col-lg-3">
+									<div class="organize-work-card__img">
+										<img src="images/content/artificial-intelligence.svg" alt="" width="65px">
+									</div>
+									<strong class="organize-work-card__title">Artificial intelligence</strong>
+									‘’NeuroModule LiveTex’’ is a knowledge base based on a neural network. They themselves learn and find answers to suctomer questions.  Simplify the work of operator and save money
+								</div>
+								<div class="organize-work-card__column organize-work-card col-sm-6 col-lg-3">
+									<div class="organize-work-card__img">
+										<img src="images/content/prediction.svg" alt="" width="65px">
+									</div>
+									<strong class="organize-work-card__title">Messaging API. Chat Bots.</strong>
+									Do you have your own form of feedback on the landings? And maybe a chatbot or another service? With the messaging API, it’s easy to add them to the LiveTex platform
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="subscribe-section" style="background-image: url(images/subscribe-bg.jpg);">
+						<div class="subscribe-section__container container-fluid">
+							<div class="row justify-content-center">
+								<div class="col-xl-8">
+									<div class="subscribe-section__title section-title text-center">
+										<h2>Organize work with clients</h2>
+										<div class="text">when you have a better organized work big sales are inevitable</div>
+									</div>
+									<div class="subscribe-form text-center">
+										<form>
+											<div class="subscribe-form__group form-group">
+												<input class="form-control" type="Email" placeholder="Enter your email">
+												<input class="subscribe-form__button button button_blue" type="submit" value="Start now!">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="integration-section">
+						<div class="container-fluid">
+							<div class="row justify-content-center">
+								<div class="integration-section__title section-title text-center">
+									<h2>Integration</h2>
+									<div class="text">support any sites and CMS</div>
+								</div>
+							</div>
+							<div class="integration-section__row row align-items-center">
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/wp.png" alt="" width="210px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/drupal.png" alt="" width="65px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/bitrix.png" alt="" width="135px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/joomla.png" alt="" width="130px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/opencart.png" alt="" width="130px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/magento.png" alt="" width="130px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/wix.png" alt="" width="65px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/textpattern.png" alt="" width="140px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/prestashop.png" alt="" width="95px">
+								</div>
+								<div class="integration-section__column col-6 col-sm-4 col-md-3">
+									<img src="images/content/mediawiki.png" alt="" width="100px">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="miltiplatform-section" style="background-image: url('images/multiplatform-bg.png');">
+						<div class="miltiplatform-section__container container-fluid">
+							<div class="row">
+								<div class="miltiplatform-section__column miltiplatform-section__column_content col-md-5">
+									<div class="miltiplatform-section__title section-title">
+										<h2>Multiplatform</h2>
+										<div class="text">Talkonaut work on all modern devices</div>
+									</div>
+									<div class="miltiplatform-section__content">Talkonaut - multi-platform tool with a browser-based <br> version and mobile apps for iOS and Android</div>
+									<div class="row">
+										<div class="miltiplatform-section__platform-col column">
+											<div class="circle">
+												<img src="images/content/windows.svg" alt="">
+											</div>
+										</div>
+										<div class="miltiplatform-section__platform-col column">
+											<div class="circle">
+												<img src="images/content/apple.svg" alt="">
+											</div>
+										</div>
+										<div class="miltiplatform-section__platform-col column">
+											<div class="circle">
+												<img src="images/content/android.svg" alt="">
+											</div>
+										</div>
+										<div class="miltiplatform-section__platform-col column">
+											<div class="circle">
+												<img src="images/content/IOS_logo.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="miltiplatform-section__column col-md-7">
+									<div class="miltiplatform-section__wrap">
+										<img src="images/multiplatform-img.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="language-section" style="background-image: url('images/language-bg.png');">
+						<div class="container-fluid">
+							<div class="language-section__title section-title text-center">
+								<h2>Multi-Language Support</h2>
+								<div class="text">more than 30 languages included</div>
+							</div>
+							<div class="language-section__row row">
+								<div class="language-section__column col-md-5 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+									<div class="organize-work-card">
+										<div class="organize-work-card__img">
+											<img src="images/content/web.svg" alt="" width="63px">
+										</div>
+										<strong class="organize-work-card__title">Correct omnichanality</strong>
+										<ul>
+											<li>No hard-coded texts</li>
+											<li>Persistent Changes</li>
+											<li>All texts can be modified</li>
+											<li>Language Packs included</li>
+											<li>One click to download and install</li>
+											<li>GUI Text-Editor included</li>
+											<li>No file editing needed</li>
+											<li>Automatic language detection</li>
+											<li>Selects the right translation automatically</li>
+										</ul>
+									</div>
+								</div>
+								<div class="language-section__column col-md-7 col-lg-8">
+									<img src="images/lang-support.png" alt="">
+								</div>
+								<div class="language-section__column col-md-6 text-center">
+									<img src="images/chat.png" alt="">
+								</div>
+								<div class="language-section__column col-md-6 d-flex flex-column justify-content-center align-items-center">
+									<div class="organize-work-card">
+										<div class="organize-work-card__img">
+											<img src="images/content/translation.svg" alt="" width="63px">
+										</div>
+										<strong class="organize-work-card__title">Correct omnichanality</strong>
+										<ul>
+											<li>No hard-coded texts</li>
+											<li>Persistent Changes</li>
+											<li>All texts can be modified</li>
+											<li>Language Packs included</li>
+											<li>One click to download and install</li>
+											<li>GUI Text-Editor included</li>
+											<li>No file editing needed</li>
+											<li>Automatic language detection</li>
+											<li>Selects the right translation automatically</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tariffs-section" id="tariffs">
+						<div class="container-fluid">
+							<div class="tariffs-section__title section-title text-center">
+								<h2>Talkonaut Pricing & Version Comparison</h2>
+								<div class="text">All prices in Euro inclusive VAT (if applicable)</div>
+							</div>
+							<div class="row justify-content-center">
+								<div class="col-xl-10">
+									<div class="tariffs-section__table-wrap">
+										<div class="tariffs-table">
+											<div class="tariffs-table__head">
+												<div class="tariffs-table__row row no-gutters align-items-end">
+													<div class="tariffs-table__td col-6">
+														<a class="link link_color_blue" href="#">Show full feature list</a>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__title">
+															<img src="images/content/paper-plane.png" alt="">
+															<h4>talkonaut ONE</h4>
+														</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__title tariffs-table__title_pro">
+															<img src="images/content/space-ship.png" alt="">
+															<h4>talkonaut PRO</h4>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tariffs-table__body">
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Non-expiring perpetual License</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Talkonaut Apps</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Talkonaut Knowledge Base</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Talkonaut Statistics & Reports</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Talkonaut GeoTracking</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<svg class="svg-icon svg-icon_color_green svg-icon_font_size_25">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#checked"></use>
+														</svg>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Maximum number of Websites & Domains</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">Unlimited</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">Unlimited</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Maximum number of Websites & Domains</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">Unlimited</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">Unlimited</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Maximum number of Websites & Domains</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">Unlimited</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">Unlimited</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row tariffs-table__row_border_none row no-gutters">
+													<div class="tariffs-table__td col-12">
+														<div class="tariffs-table__background" style="background-image: url('images/bg-price.jpg');">
+															No monthly fees! Pay just once and you own the license.
+														</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">1 Operator or Bot</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">FREE</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">—</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">2 Operators or Bots</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">—</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">200€</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">
+														<div class="tariffs-table__td-title row no-gutters align-items-center justify-content-between">
+															<div class="tariffs-table__td-title-name">3 Operators or Bots</div>
+															<div class="marker">25% OFF</div>
+														</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">—</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">240€</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">
+														<div class="tariffs-table__td-title row no-gutters align-items-center justify-content-between">
+															<div class="tariffs-table__td-title-name">5 Operators or Bots</div>
+															<div class="marker">30% OFF</div>
+														</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">—</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">375€</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">
+														<div class="tariffs-table__td-title row no-gutters align-items-center justify-content-between">
+															<div class="tariffs-table__td-title-name">10 Operators or Bots</div>
+															<div class="marker">35% OFF</div>
+														</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">—</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">700€</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row row no-gutters">
+													<div class="tariffs-table__td col-6">Unlimited Operators and Bots</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name">—</div>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<div class="tariffs-table__name tariffs-table__name_pro">1100€</div>
+													</div>
+												</div>
+												<div class="tariffs-table__row tariffs-table__row_border_none row justify-content-end no-gutters">
+													<div class="tariffs-table__td col-3 text-center">
+														<a class="tariffs-table__button button button_box-shadow button_grey" href="#">Download</a>
+													</div>
+													<div class="tariffs-table__td col-3 text-center">
+														<a class="tariffs-table__button button button_box-shadow button_blue" href="#">Buy Now</a>
+													</div>
+												</div>
+												<div class="tariffs-table__row tariffs-table__row_border_none row justify-content-end no-gutters">
+													<div class="tariffs-table__td text-right">
+														<div class="tariffs-table__dropdown dropdown">
+															<a class="button-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">New License / Initial Purchase</a>
+															<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+																<a href="#" class="dropdown-item">item 1</a>
+																<a href="#" class="dropdown-item">item 2</a>
+																<a href="#" class="dropdown-item">item 3</a>
+															</div>
+														</div>
+														<div class="tariffs-table__checkbox checkbox text-center">
+															<input class="checkbox__input" type="checkbox" id="ch1" checked>
+															<label class="checkbox__label" for="ch1">
+																<div class="checkbox__label-in">Backlink Removal</div>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="privacy-section" style="background-image: url('images/privacy-bg.png');">
+						<div class="privacy-section__container container-fluid">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="privacy-section__title section-title">
+										<h2>Data Privacy Politics</h2>
+										<div class="text">your website. your customers. your data.</div>
+									</div>
+									<div class="organize-work-card">
+										<ul>
+											<li>All customer data remains on your server</li>
+											<li>No third party access whatsoever</li>
+											<li>Works without Cookies</li>
+											<li>If needed, Cookies can be deactivated completely</li>
+											<li>Masked IP Addresses</li>
+											<li>To comply with data privacy and security regulations</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="evaluate-section">
+						<div class="container-fluid">
+							<div class="row justify-content-center">
+								<div class="col-lg-7">
+									<div class="evaluate-section__title section-title text-center">
+										<h2>Evaluate performance</h2>
+										<div class="text">you can watch your statistics for better buiseness</div>
+									</div>
+									<div class="row flex-column flex-sm-row flex-nowrap row_indents_s justify-content-around">
+										<div class="organize-work-card">
+											<ul>
+												<li>Flawless Integration</li>
+												<li>Individually Configurable</li>
+												<li>Exportable HTML reports</li>
+											</ul>
+										</div>
+										<div class="organize-work-card">
+											<ul>
+												<li>No further installation necessary</li>
+												<li>Focus on what's important for you</li>
+												<li>Save as HTML file or print to PDF</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="evaluate-section__img text-center">
+								<img src="images/evaluate-img.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="getInTouch-section" id="contacts">
+						<img class="getInTouch-section__bg" src="images/getInTouch-bg.png" alt="">
+						<div class="getInTouch-section__container container-fluid">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="getInTouch-section__content">
+										<h3>Any question? Reach out to us and we’ll get back to you shortly.</h3>
+										<a class="getInTouch-section__item d-flex flex-nowrap" href="#">
+											<svg class="svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#phone"></use>
+											</svg>
+											<div>+31 0123 4567</div>
+										</a>
+										<a class="getInTouch-section__item d-flex flex-nowrap" href="#">
+											<svg class="svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#envelope-new"></use>
+											</svg>
+											<div>info@mail.com</div>
+										</a>
+										<a class="getInTouch-section__item d-flex flex-nowrap" href="#">
+											<svg class="svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#telegram"></use>
+											</svg>
+											<div>Join us on Telegram</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="getInTouch-section__form getInTouch-form">
+										<h2>Get in touch</h2>
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="Your Name">
+										</div>
+										<div class="form-group">
+											<input class="form-control" type="text" placeholder="Your Email">
+										</div>
+										<div class="form-group">
+											<textarea class="form-control" type="text" rows="5" placeholder="Your Message"></textarea>
+										</div>
+										<div class="form-group">
+											<input class="button button_blue" type="submit" value="Send Message">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="row justify-content-between">
+							<div class="footer__column column">
+								<a href="#" class="logo">
+									<img src="images/content/logo.svg" alt="">
+								</a>
+							</div>
+							<div class="footer__column column">
+								<div class="social list-clr d-flex flex-wrap row row_indents_m">
+									<li>
+										<a class="circle circle_theme_two" href="#">
+											<img src="images/content/smartphone-call.svg" alt="" width="13px">
+										</a>
+									</li>
+									<li>
+										<a class="circle circle_theme_two" href="#">
+											<img src="images/content/close-envelope.svg" alt="" width="18px">
+										</a>
+									</li>
+									<li>
+										<a class="circle circle_theme_two" href="#">
+											<img src="images/content/paper-plane.svg" alt="" width="25px">
+										</a>
+									</li>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

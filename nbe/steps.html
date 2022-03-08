@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="theme-color" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" type="image/png" href="favicon-16x16.png">
+		<link rel="icon" type="image/png" href="favicon-32x32.png">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<title>Steps</title>
+		<script async>
+			function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+		
+			if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+				loadJS("https://afarkas.github.io/lazysizes/plugins/respimg/ls.respimg.min.js");
+			};
+				var lazy = function lazy() {
+				document.addEventListener('lazyloaded', function (e)  {
+					e.target.parentNode.classList.add('lazy-image-loaded');
+					e.target.parentNode.classList.remove('lazy-loading');
+				});
+			}
+			lazy();
+		</script>
+		<script src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js" async></script>
+		<script src="https://afarkas.github.io/lazysizes/lazysizes.min.js" async></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/vendor.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="wrapper__in">
+				<header class="header">
+					<div class="container-fluid">
+						<div class="d-flex flex-wrap align-items-center">
+							<a class="header__logo logo" href="#">
+								<img class="lazy-img lazyload" data-sizes="auto" data-src="images/logo.png" alt="">
+							</a>
+							<div class="header__phone phone">
+								<!-- <svg class="phone__icon svg-icon">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#telephone"></use>
+								</svg> -->
+								<a class="phone__link d-flex flex-nowrap align-items-center" href="tel:+88005506534">
+									<svg class="phone__icon svg-icon">
+										<use xlink:href="images/svg-sprite/svgSprite.svg#telephone"></use>
+									</svg>
+									<span>8 800 550 65 34</span>
+								</a>
+								<div class="phone__text">Звонок бесплатный по России</div>
+							</div>
+							<div class="header__menu menu ml-xl-auto" data-id="menu">
+								<div class="menu__in position-relative">
+									<button class="menu__close close close_position_default d-lg-none" type="button" data-close="menu">
+										<svg class="menu__icon svg-icon svg-icon_color_black svg-icon_font_size_25">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+										</svg>
+									</button>
+									<div class="menu__in-scroll">
+										<ul class="menu__nav nav nav-pills menu-nav d-flex flex-wrap align-items-start" id="menu-scrolSpy">
+											<li>
+												<div class="menu-nav__dropdown dropdown">
+													<a class="dropdown__toggle nav-link active" href="#programs">
+														<span>Программы</span>
+														<svg class="dropdown__caret-angle svg-icon svg-icon_font_size_7">
+															<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+														</svg>
+													</a>
+													<ul class="dropdown__menu">
+														<li><a href="#">Программы</a></li>
+														<li><a href="#">Кейсы</a></li>
+														<li><a href="#">Отзывы</a></li>
+													</ul>
+												</div>
+											</li>
+											<li><a class="nav-link" href="#case">Кейсы</a></li>
+											<li><a class="nav-link" href="#reviews">Отзывы</a></li>
+										</ul>
+									</div>
+									<a class="menu__login button ml-auto mr-auto d-lg-none" href="#">Войти</a>
+								</div>
+							</div>
+							<a class="header__login button d-none d-lg-inline-block" href="#">Войти</a>
+							<button class="header__button button-clr d-lg-none" type="button" data-open="menu">
+								<svg class="svg-icon svg-icon_color_black">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#menu"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</header>
+				<div class="wrapper__content">
+					<div class="quiz-section">
+						<div class="quiz" data-validate="form">
+							<form>
+								<div class="d-flex flex-wrap">
+									<ul class="quiz__nav" data-slider-nav="quiz-steps">
+										<li class="active">
+											<div class="quize-menu-item">
+												<div class="quize-menu-item__img">
+													<svg class="quize-menu-item__icon svg-icon">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#user"></use>
+													</svg>
+												</div>
+												<div class="quize-menu-item__text">персональные <br> данные</div>
+											</div>
+										</li>
+										<li>
+											<div class="quize-menu-item">
+												<div class="quize-menu-item__img">
+													<svg class="quize-menu-item__icon svg-icon">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#note"></use>
+													</svg>
+												</div>
+												<div class="quize-menu-item__text">персональные <br> данны</div>
+											</div>
+										</li>
+										<li>
+											<div class="quize-menu-item">
+												<div class="quize-menu-item__img">
+													<svg class="quize-menu-item__icon svg-icon">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#bag"></use>
+													</svg>
+												</div>
+												<div class="quize-menu-item__text">персональные <br> данны</div>
+											</div>
+										</li>
+										<li>
+											<div class="quize-menu-item">
+												<div class="quize-menu-item__img">
+													<svg class="quize-menu-item__icon svg-icon">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#hat"></use>
+													</svg>
+												</div>
+												<div class="quize-menu-item__text">персональные <br> данны</div>
+											</div>
+										</li>
+									</ul>
+									<div class="quiz__content">
+										<div class="quiz__slider owl-carousel owl-theme" data-slider="quiz-steps">
+											<div class="quiz__step">
+												<div class="quiz__step-in">
+													<div class="quiz__step-title content">
+														<div class="quize-menu-item">
+															<div class="quize-menu-item__img">
+																<svg class="quize-menu-item__icon svg-icon">
+																	<use xlink:href="images/svg-sprite/svgSprite.svg#user"></use>
+																</svg>
+															</div>
+														</div>
+														<h2>Шаг 1 из 4</h2>
+														<div>Укажите ваши личные данные</div>
+													</div>
+													<div class="form-group">
+														<label class="form-group__label label" for="in1">Фамилия, имя, отчество</label>
+														<input class="form-control" type="text" id="in1" name="name" placeholder="Петров Алексей Викторович" data-msg-required="Поле не может быть пустым. Укажите фамилию, имя и отчество (если есть)" data-rule-required="true">
+													</div>
+													<div class="row">
+														<div class="col-lg-6">
+															<div class="form-group">
+																<label class="form-group__label label" for="in2">E-mail</label>
+																<input class="form-control" type="email" name="email" id="in2" placeholder="example@mail.com" data-msg-required="Недопустимый формат" data-rule-required="true">
+															</div>
+														</div>
+														<div class="col-lg-6">
+															<div class="form-group">
+																<label class="form-group__label label" for="in3">Мобильный телефон</label>
+																<input class="form-control" type="tel" id="in3" name="tel" placeholder="+7" data-mask="0000000000000000" data-msg-required="Укажите номер телефона" data-rule-required="true" autocomplete="off" maxlength="16">
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<button class="button button_theme_yellow order-first" type="button" data-step="next">Далее</button>
+													</div>
+													<div class="text-right">
+														<a href="#" class="quiz__link link link_circle">?</a>
+													</div>
+												</div>
+											</div>
+											<div class="quiz__step">
+												<div class="quiz__step-in">
+													<div class="quiz__step-title content">
+														<div class="quize-menu-item">
+															<div class="quize-menu-item__img">
+																<svg class="quize-menu-item__icon svg-icon">
+																	<use xlink:href="images/svg-sprite/svgSprite.svg#note"></use>
+																</svg>
+															</div>
+														</div>
+														<h2>Шаг 2 из 4</h2>
+														<div>Личная информация</div>
+													</div>
+													<div class="form-group">
+														<label class="form-group__label label" for="sel1">Ваш возраст</label>
+														<div class="form-control-select">
+															<select class="required" name="select1" id="sel1" data-msg-required="Укажите данные">
+																<option value="">Выберите возраст</option>
+																<option value="1">От 21 до 30</option>
+																<option value="2">От 31 до 40</option>
+																<option value="3">От 41 до 50</option>
+															</select>
+															<svg class="svg-icon">
+																<use xlink:href="images/svg-sprite/svgSprite.svg#caret-down"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="form-group__label label" for="sel2">Сколько раз в год вы путешествуете?</label>
+														<div class="form-control-select">
+															<select class="required" name="select2" id="sel2" data-msg-required="Укажите данные">
+																<option value="">Укажите количество</option>
+																<option value="1">Больше 1 раз</option>
+																<option value="2">Больше 2 раз</option>
+																<option value="3">Больше 3 раз</option>
+															</select>
+															<svg class="svg-icon">
+																<use xlink:href="images/svg-sprite/svgSprite.svg#caret-down"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="form-group__label label" for="sel3">Род деятельности</label>
+														<div class="form-control-select">
+															<select class="required" name="select3" id="sel3" data-msg-required="Укажите данные">
+																<option value="">Укажите род деятельность</option>
+																<option value="1">Наемный сотрудник</option>
+																<option value="2">Наемный сотрудник</option>
+																<option value="3">Наемный сотрудник</option>
+															</select>
+															<svg class="svg-icon">
+																<use xlink:href="images/svg-sprite/svgSprite.svg#caret-down"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="quiz__buttons row">
+														<button class="checkbox__submit button" type="button" data-step="back">Назад</button>
+														<button class="checkbox__submit button button_theme_yellow" type="button" data-step="next">Далее</button>
+													</div>
+												</div>
+											</div>
+											<div class="quiz__step">
+												<div class="quiz__step-in">
+													<div class="quiz__step-title content">
+														<div class="quize-menu-item">
+															<div class="quize-menu-item__img">
+																<svg class="quize-menu-item__icon svg-icon">
+																	<use xlink:href="images/svg-sprite/svgSprite.svg#bag"></use>
+																</svg>
+															</div>
+														</div>
+														<h2>Шаг 3 из 4</h2>
+														<div>Текущая работа и доход</div>
+													</div>
+													<div class="form-group">
+														<label class="form-group__label label" for="sel4">Какой у вас текущий уровень дохода?</label>
+														<div class="form-control-select">
+															<select class="required" name="select4" id="sel4" data-msg-required="Укажите сумму" required>
+																<option value="">Укажите сумму</option>
+																<option value="1">Свыше 30.000 руб/мес</option>
+																<option value="2">Свыше 50.000 руб/мес</option>
+																<option value="3">Свыше 100.000 руб/мес</option>
+															</select>
+															<svg class="svg-icon">
+																<use xlink:href="images/svg-sprite/svgSprite.svg#caret-down"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="quiz-step__content content">
+														<p>Насколько вы удовлетворены своей нынешней работой?</p>
+													</div>
+													<div class="form-group">
+														<label class="form-group__label label" for="sel5">Оцените от 1 до 5</label>
+														<div class="form-control-select">
+															<select class="required" name="select5" id="sel5" data-msg-required="Оцените" required>
+																<option value="">Выбрать</option>
+																<option value="1">1 - терпеть не могу</option>
+																<option value="2">2 - сносно</option>
+																<option value="3">3 - удовлетворительно</option>
+																<option value="4">4 - хорошо</option>
+																<option value="5">5 - отлично</option>
+															</select>
+															<svg class="svg-icon">
+																<use xlink:href="images/svg-sprite/svgSprite.svg#caret-down"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="quiz-step__content content">
+														<p>Насколько вы готовы к труду,  вложению сил и денег ради того, чтобы освоить профессию, в которой в среднем специалисты зарабатывают 45-145 000 рублей удаленно и работают по свободному графику?</p>
+													</div>
+													<div class="form-group">
+														<div class="checkbox checkbox_radio d-flex flex-column align-items-start">
+															<input class="checkbox__input input-hidden" type="radio" value="radioList1" name="radiolist" id="radio1" data-msg-required="Выберите один из вариантов" required>
+															<label class="checkbox__label" for="radio1">
+																<svg class="checkbox__checked svg-icon">
+																	<use xlink:href="images/svg-sprite/svgSprite.svg#check"></use>
+																</svg>
+																<span class="checkbox__label-in">Я буду инвестировать свое время и деньги, если будет гарантия достижения результата</span>
+															</label>
+														</div>
+														<div class="checkbox checkbox_radio d-flex flex-column align-items-start">
+															<input class="checkbox__input input-hidden" type="radio" value="radioList2" name="radiolist" id="radio2" data-msg-required="Выберите один из вариантов" required>
+															<label class="checkbox__label" for="radio2">
+																<svg class="checkbox__checked svg-icon">
+																	<use xlink:href="images/svg-sprite/svgSprite.svg#check"></use>
+																</svg>
+																<span class="checkbox__label-in">Я просто расширяю кругозор, пока несерьезно отношусь ко всей деятельности в интернете</span>
+															</label>
+														</div>
+														<div class="checkbox checkbox_radio d-flex flex-column align-items-start">
+															<input class="checkbox__input input-hidden" type="radio" value="radioList3" name="radiolist" id="radio3" data-msg-required="Выберите один из вариантов" required>
+															<label class="checkbox__label" for="radio3">
+																<svg class="checkbox__checked svg-icon">
+																	<use xlink:href="images/svg-sprite/svgSprite.svg#check"></use>
+																</svg>
+																<span class="checkbox__label-in">Я могу инвестировать только свое время, финансово платить за обучение/знания не готов(а)</span>
+															</label>
+														</div>
+													</div>
+													<div class="quiz__buttons row">
+														<button class="checkbox__submit button" type="button" data-step="back">Назад</button>
+														<button class="checkbox__submit button button_theme_yellow" type="button" data-step="next">Далее</button>
+													</div>
+												</div>
+											</div>
+											<div class="quiz__step">
+												<div class="quiz__step-in">
+													<div class="quiz__step-title content">
+														<div class="quize-menu-item">
+															<div class="quize-menu-item__img">
+																<svg class="quize-menu-item__icon svg-icon">
+																	<use xlink:href="images/svg-sprite/svgSprite.svg#hat"></use>
+																</svg>
+															</div>
+														</div>
+														<h2>Шаг 4 из 4</h2>
+														<div>Обучение</div>
+													</div>
+													<div class="form-group">
+														<label class="form-group__label label" for="s4-1">Как вы относитесь к обучению?</label>
+														<div class="form-control-select">
+															<select class="required" name="select6" id="s4-1" data-msg-required="Сделайте выбор">
+																<option value="">Ваше отношение?</option>
+																<option value="1">Я уже проходила много ...</option>
+																<option value="2">Я уже проходила много ...2</option>
+																<option value="3">Я уже проходила много ...3</option>
+															</select>
+															<svg class="svg-icon">
+																<use xlink:href="images/svg-sprite/svgSprite.svg#caret-down"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="form-group__label label" for="s4-2">Откуда вы узнали о нас?</label>
+														<div class="form-control-select">
+															<select class="required" name="select7" id="s4-2" data-msg-required="Сделайте выбор">
+																<option value="">Укажите источник</option>
+																<option value="1">Была рассылка от дру ...</option>
+																<option value="2">Была рассылка от дру ...2</option>
+																<option value="3">Была рассылка от дру ...3</option>
+															</select>
+															<svg class="svg-icon">
+																<use xlink:href="images/svg-sprite/svgSprite.svg#caret-down"></use>
+															</svg>
+														</div>
+													</div>
+													<div class="quiz__checkbox form-group">
+														<div class="checkbox d-flex flex-column align-items-start">
+															<input class="checkbox__input input-hidden" type="checkbox" id="ch5" name="polytic" data data-msg-required="Дайте согласие на обработку персональных данных" data-rule-required="true" data-checkbox>
+															<label class="checkbox__label" for="ch5">
+																<svg class="checkbox__checked svg-icon">
+																	<use xlink:href="images/svg-sprite/svgSprite.svg#check"></use>
+																</svg>
+																<span class="checkbox__label-in">Даю согласие обработку персональных данных, <br> согласно с политикой конфиденциальности</span>
+															</label>
+															<div class="quiz__buttons row order-first">
+																<button class="checkbox__submit button" type="button" data-step="back">Назад</button>
+																<input class="checkbox__submit button button_theme_yellow" type="submit" value="Отправить">
+															</div>
+															<div class="checkbox__alert form-alert form-alert_error order-last">Дайте согласие на обработку персональных данных</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- //= includes/footer.html -->
+				<footer class="footer">
+					<div class="footer__container container-fluid">
+						<div class="footer__head d-flex flex-column align-items-center flex-lg-row justify-content-lg-between align-items-lg-center">
+							<div class="footer__column column footer__column_type_one">
+								<a class="footer__logo logo" href="#">
+									<img class="lazy-img lazyload" data-sizes="auto" data-src="images/logo.png" alt="">
+									<span>New Business Era</span>
+								</a>
+							</div>
+							<div class="footer__column column footer__column_type_two">
+								<a class="link link_email" href="mailto:info@nbe.bz">info@nbe.bz</a>
+							</div>
+							<div class="footer__column column footer__column_type_three">
+								<div class="phone phone_bigger">
+									<a class="phone__link d-lg-flex flex-lg-nowrap align-items-lg-center" href="tel:+88005506534">
+										<svg class="phone__icon svg-icon">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#telephone"></use>
+										</svg>
+										<span>8 800 550 65 34</span>
+									</a>
+									<div class="phone__text">Звонок бесплатный по России</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+							<div class="footer__column column footer__column_type_one">
+								<div class="row d-block d-lg-flex flex-lg-row justify-content-lg-around justify-content-xl-between">
+									<div class="footer-nav column">
+										<h6 class="collapsed" data-toggle="collapse" href="#f-1" role="button" aria-expanded="false" aria-controls="f-1">
+											<span>о компании</span>
+											<svg class="svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+											</svg>
+										</h6>
+										<ul class="collapse" id="f-1">
+											<li><a href="#">О компании</a></li>
+											<li><a href="#">Партнерам</a></li>
+											<li><a href="#">Экспертам</a></li>
+											<li><a href="#">Вакансии</a></li>
+											<li><a href="#">Контакты</a></li>
+										</ul>
+									</div>
+									<div class="footer-nav column">
+										<h6 class="collapsed" data-toggle="collapse" href="#f-2" role="button" aria-expanded="false" aria-controls="f-2">
+											<span>наши курсы</span>
+											<svg class="svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+											</svg>
+										</h6>
+										<ul class="collapse" id="f-2">
+											<li><a href="#">Интернет-маркетинг</a></li>
+											<li><a href="#">Бизнес и управление</a></li>
+											<li><a href="#">Дизайн и UX</a></li>
+											<li><a href="#">Программирование</a></li>
+											<li><a href="#">Data Science</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="footer__column column footer__column_type_two">
+								<div class="footer-nav">
+									<h6 class="collapsed" data-toggle="collapse" href="#f-3" role="button" aria-expanded="false" aria-controls="f-3">
+										<span>медиа и реклама</span>
+										<svg class="svg-icon">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#angle"></use>
+										</svg>
+									</h6>
+									<ul class="collapse" id="f-3">
+										<li><a href="#">Блог компании</a></li>
+										<li><a href="#">Правовая информация</a></li>
+										<li><a href="#">Центр развития карьеры</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer__column column footer__column_type_three d-flex flex-column-reverse align-items-center d-lg-block">
+								<div class="footer__social-wrap">
+									<div class="footer__social-title">Мы в соц.сетях</div>
+									<ul class="footer__social social">
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#facebook"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#vk"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#youtube"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#telegram"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="images/svg-sprite/svgSprite.svg#instagram"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="footer__license license">
+									<div class="row row_indents_s align-items-center justify-content-center">
+										<div class="license__column">
+											<img class="lazy-img lazyload" data-sizes="auto" data-src="images/license-img.png" alt="">
+										</div>
+										<div class="license__column">
+											<div class="license__content">
+												<p><strong>Государственная <br> лицензия</strong></p>
+												<a class="license__link" data-toggle="modal" data-target="#modalLicense" href="#">Смотреть</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+				<div class="modal modal_thanks" id="modalThanks" tabindex="-1" role="dialog" aria-labelledby="modalThanksTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal__quiz quiz modal-content bounceIn animated" data-validate="form">
+							<button type="button" class="quiz__close close" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon svg-icon_font_size_30">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="quiz__step-title content text-center">
+								<h2>Спасибо! Заявка успешно отправлена</h2>
+								<p>Мы уже подбираем подходящие  направления и скоро перезвоним вам для уточнения деталей</p>
+								<img src="images/thanksModalImg.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal_polytic" id="modalPolytic" tabindex="-1" role="dialog" aria-labelledby="modalPolyticTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal__quiz quiz modal-content fadeInLeft animated" data-validate="form">
+							<button type="button" class="quiz__close close" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon svg-icon_font_size_30">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="quiz__step-title content">
+								<h2>Политика конфедициальности</h2>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, veritatis quisquam minima atque facere accusantium cupiditate voluptate modi error dicta neque dolorum dolor dolore, odio iure veniam. Earum quod animi unde ad quibusdam, modi tenetur molestiae ipsa impedit, ipsum corporis placeat tempore cumque. Suscipit modi quas ex, voluptatem unde nesciunt possimus recusandae ullam commodi, tempora adipisci dicta libero soluta voluptatum labore, voluptates optio. Ab, culpa ullam deleniti amet dicta rem perferendis consequatur eum, labore error consequuntur sit similique omnis fuga laudantium tempora sequi expedita deserunt molestias. Velit facere pariatur aspernatur iste deserunt, neque optio fugiat accusantium repudiandae eveniet, cupiditate maxime ad quidem quae sit natus? Ipsa quisquam quos, earum expedita doloribus, consectetur ratione deserunt atque reprehenderit iusto velit. Atque officia velit aperiam. Magni odio, deleniti aspernatur harum ex quasi. Rem consequatur vel nobis maxime ipsa nesciunt voluptates fuga fugit iste animi molestias accusamus, odit excepturi facilis quibusdam omnis autem quasi dolorem deleniti mollitia facere laboriosam delectus temporibus quo unde. Facilis ea nobis quasi deleniti suscipit reprehenderit laudantium commodi, repellat magnam ex adipisci dolorum perspiciatis molestias error, quas earum vitae qui ratione molestiae autem. Impedit optio magni rem eius quos quod inventore ab repudiandae consequuntur nulla in fugit, earum assumenda soluta veritatis hic ipsa molestias velit doloribus sint illum dignissimos ipsam blanditiis quibusdam. Repellendus alias expedita dolorum iure illo adipisci aliquid. Quam fugit, nobis magnam libero culpa soluta, voluptatem quaerat illo esse veritatis maiores vel error molestiae delectus porro pariatur totam a impedit ut numquam, rem iusto minima reiciendis. Aliquam dolores aspernatur officiis consectetur iste tempore veniam, accusantium minus molestias, sed, assumenda iusto quo repellendus quod earum quaerat sint consequuntur? Fugiat quia debitis animi temporibus eum minima sint veniam sequi, aspernatur itaque error commodi placeat repudiandae natus iste tempora corporis cum delectus. Nesciunt, ea? Vero dolorum, placeat a! Voluptates tempore voluptatum cumque, eum a possimus distinctio omnis. Deleniti, nisi quaerat! Rerum incidunt voluptatibus nulla dolor sit cumque minus, nam sunt dolore, sapiente assumenda delectus accusamus consequuntur veniam pariatur unde officia debitis perferendis cupiditate, tenetur maiores. Eaque non voluptates, provident mollitia minima explicabo cum, facilis ratione perferendis modi tempora recusandae consequatur dolorem voluptate vero inventore harum magni, reiciendis, officiis sapiente architecto. Aliquam illo debitis rerum quidem inventore ea omnis molestias mollitia maiores, assumenda dignissimos veritatis vel laboriosam a, et ex aliquid eveniet adipisci odio tenetur, libero deserunt delectus repellendus sed. Nihil vitae explicabo alias culpa eveniet fugit cumque ab autem suscipit neque laboriosam harum ipsa, rem voluptate cum molestias, voluptatum ratione, quibusdam minus labore! Esse libero eos odit ex necessitatibus recusandae similique quae, fuga earum quos consequuntur consequatur qui. Labore inventore officia non iste. Libero, repudiandae porro ratione, quia maiores cumque maxime iure quidem sit fuga pariatur ipsa officiis qui dignissimos blanditiis accusantium nulla. Hic quam eum blanditiis accusantium, architecto, praesentium dolorem ab itaque porro quasi incidunt vel nisi fugit sint consectetur eius nulla possimus quibusdam. Modi eveniet, id nulla laborum suscipit blanditiis quidem tempora natus ipsum magni, ratione obcaecati labore porro provident, voluptatum iusto eum cumque rerum maxime culpa molestiae. Iure magnam sint expedita. Sit animi alias ipsum mollitia laboriosam hic quia veritatis aperiam expedita eos perferendis voluptatibus repudiandae maxime, nisi amet velit nihil, deleniti dolore tenetur. Iure veritatis nihil velit omnis, officiis possimus in ex vero ullam rem consectetur quasi animi, tempora mollitia consequuntur ut at libero. Earum aspernatur amet cum facere, architecto soluta numquam sint sequi, voluptatum perferendis maiores laborum perspiciatis possimus, ex, fugit vel? Voluptatum expedita necessitatibus aliquam architecto dicta reiciendis quod sapiente numquam iste quo aperiam consequatur ducimus, quae error quia nesciunt quis molestias ratione, officia a dolorum, quibusdam. Necessitatibus, consequatur vero aperiam ipsum in aliquam expedita numquam officia ullam quisquam odio quis quae saepe explicabo autem assumenda, nihil officiis minima nisi enim. Eius, dolore velit fugiat voluptatum esse quasi provident laboriosam nemo aspernatur eaque, tempora quae sequi! Nihil, vero quidem quos voluptates aspernatur, voluptatem consequuntur dolorem quas iusto eligendi consectetur officiis unde iure sequi molestias modi natus. Saepe quis cupiditate quos voluptatibus omnis iusto ducimus quasi modi ipsam veniam. Reiciendis commodi adipisci nisi maxime ut earum quasi quae doloribus cum, esse praesentium id inventore tempora facere vel porro officia pariatur alias fugit deleniti veniam ipsum. Repellendus magni voluptatum nam, debitis perferendis praesentium temporibus aliquid assumenda autem, deserunt nisi neque eum consequuntur facilis nostrum. Voluptatum impedit eligendi vitae natus enim aliquid nemo! Quis iure facilis cumque quisquam ipsum omnis? Deleniti, nemo repellendus earum sequi enim vel, corrupti, natus sint consequuntur nobis iure temporibus aspernatur dignissimos dicta. Commodi ratione vitae eum natus. Vero, excepturi fugiat eaque repudiandae nesciunt doloribus a recusandae nihil error maxime ab veritatis odio asperiores. Culpa nemo consequuntur architecto ipsum, ullam commodi beatae placeat nostrum magnam explicabo molestiae, vel tempore enim, voluptatem ipsa esse aspernatur! Sapiente sunt numquam corrupti nesciunt deleniti cum! Minima iure tenetur dolorem voluptatum deleniti vel, perferendis, enim? Adipisci itaque error, aperiam ut a quibusdam quidem doloremque alias dolorum debitis. Rem eveniet ad, placeat itaque. Obcaecati deleniti fuga totam itaque aut. Pariatur modi explicabo cumque velit nesciunt consectetur harum, illum possimus. Ipsa fugiat, aliquam distinctio officiis animi, alias, rerum tempora placeat itaque, sed optio magni! Dicta odit ab fugit nisi exercitationem cumque atque obcaecati consequuntur saepe similique, ipsum sunt aperiam nostrum maxime nulla veritatis. Eius vel, repellendus est dignissimos modi architecto, amet voluptatem cumque totam. Nulla necessitatibus autem ex, asperiores sequi velit! Nostrum cumque nemo blanditiis debitis nisi magni, nihil neque harum eligendi, incidunt, animi. A inventore explicabo aspernatur error molestias tenetur magni, veniam aperiam cum earum commodi eveniet culpa dolor facilis ratione odio nam ipsam qui. Dolore exercitationem unde magnam obcaecati voluptatem dolores voluptates quis cumque numquam et laboriosam corporis, eveniet mollitia? Quidem tempore ullam nobis. Quisquam nihil eligendi accusantium illum quidem, commodi, rem quibusdam voluptas at dolores debitis magnam ad quis odio quo dolorum nemo expedita repellendus unde vel quod necessitatibus, corporis atque earum. Expedita deleniti ut voluptatum fuga, pariatur nostrum aliquid error hic, velit commodi consequatur quas quasi aperiam quis! Molestias quidem non nulla at iure amet numquam consectetur porro. Sequi, distinctio asperiores animi commodi sed itaque expedita laboriosam!
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal modal_license" id="modalLicense" tabindex="-1" role="dialog" aria-labelledby="modalLicenseTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal__quiz quiz modal-content bounceIn animated" data-validate="form">
+							<button type="button" class="quiz__close close" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon svg-icon_font_size_30">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="quiz__step-title content text-center">
+								<h2>Лицензия</h2>
+								<img src="images/sertificate.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

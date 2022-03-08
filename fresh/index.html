@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="theme-color" content>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" type="image/png" href="favicon-16x16.png">
+		<link rel="icon" type="image/png" href="favicon-32x32.png">
+		<style>
+			:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}header{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1,h3{margin-top:0;margin-bottom:.5rem}ul{margin-top:0;margin-bottom:1rem}a{color:#007bff;text-decoration:none;background-color:transparent}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}button{-webkit-border-radius:0;border-radius:0}button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}[type=button],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}h1,h3{margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:2.5rem}h3{font-size:1.75rem}.list-unstyled{padding-left:0;list-style:none}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-ms-flex-wrap:wrap;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col-md-6,.col-md-7,.col-xl-3,.col-xl-6{position:relative;width:100%;padding-right:15px;padding-left:15px}.order-1{-ms-flex-order:1;-webkit-box-ordinal-group:2;-webkit-order:1;order:1}.order-2{-ms-flex-order:2;-webkit-box-ordinal-group:3;-webkit-order:2;order:2}.order-3{-ms-flex-order:3;-webkit-box-ordinal-group:4;-webkit-order:3;order:3}.form-control{display:block;width:100%;height:calc(1.5em + .75rem + 2px);padding:.375rem .75rem;font-size:1rem;font-weight:400;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;-webkit-border-radius:.25rem;border-radius:.25rem}.form-control::-ms-expand{background-color:transparent;border:0}.form-control::-webkit-input-placeholder{color:#6c757d;opacity:1}.form-control::-moz-placeholder{color:#6c757d;opacity:1}.form-control:-ms-input-placeholder{color:#6c757d;opacity:1}.form-control::-ms-input-placeholder{color:#6c757d;opacity:1}.form-group{margin-bottom:1rem}.valid-feedback{display:none;width:100%;margin-top:.25rem;font-size:80%;color:#28a745}.invalid-feedback{display:none;width:100%;margin-top:.25rem;font-size:80%;color:#dc3545}.fade:not(.show){opacity:0}.modal{position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;outline:0}.modal-dialog{position:relative;width:auto;margin:.5rem}.modal.fade .modal-dialog{-webkit-transform:translate(0,-50px);-ms-transform:translate(0,-50px);transform:translate(0,-50px)}.modal-dialog-centered{display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-ms-flex-align:center;-webkit-box-align:center;-webkit-align-items:center;align-items:center;min-height:calc(100% - 1rem)}.modal-dialog-centered::before{display:block;height:calc(100vh - 1rem);content:""}.modal-content{position:relative;display:-ms-flexbox;display:-webkit-box;display:-webkit-flex;display:flex;-ms-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column;width:100%;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);-webkit-border-radius:.3rem;border-radius:.3rem;outline:0}.modal-body{position:relative;-ms-flex:1 1 auto;-webkit-box-flex:1;-webkit-flex:1 1 auto;flex:1 1 auto;padding:1rem}.d-none{display:none!important}.d-flex{display:-ms-flexbox!important;display:-webkit-box!important;display:-webkit-flex!important;display:flex!important}.flex-column{-ms-flex-direction:column!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-webkit-flex-direction:column!important;flex-direction:column!important}.flex-grow-1{-ms-flex-positive:1!important;-webkit-box-flex:1!important;-webkit-flex-grow:1!important;flex-grow:1!important}.justify-content-center{-ms-flex-pack:center!important;-webkit-box-pack:center!important;-webkit-justify-content:center!important;justify-content:center!important}.align-items-center{-ms-flex-align:center!important;-webkit-box-align:center!important;-webkit-align-items:center!important;align-items:center!important}.position-relative{position:relative!important}.mb-0{margin-bottom:0!important}.mb-2{margin-bottom:.5rem!important}.mb-3{margin-bottom:1rem!important}.mb-4{margin-bottom:1.5rem!important}.mb-5{margin-bottom:3rem!important}.pb-1{padding-bottom:.25rem!important}.pb-2{padding-bottom:.5rem!important}.pb-3{padding-bottom:1rem!important}.pt-4{padding-top:1.5rem!important}.pt-5{padding-top:3rem!important}.mt-auto{margin-top:auto!important}.mr-auto{margin-right:auto!important}.ml-auto{margin-left:auto!important}.text-center{text-align:center!important}.font-weight-light{font-weight:300!important}.text-white{color:#fff!important}.svg-icon{display:inline-block;width:1em;height:1em;fill:currentColor}@font-face{font-family:'SF UI Display';src:url(fonts/subset-SFUIDisplay-Bold.woff2) format("woff2"),url(fonts/subset-SFUIDisplay-Bold.woff) format("woff");font-weight:700;font-style:normal}@font-face{font-family:'SF UI Display';src:url(fonts/subset-SFUIDisplay-Semibold.woff2) format("woff2"),url(fonts/subset-SFUIDisplay-Semibold.woff) format("woff");font-weight:600;font-style:normal}@font-face{font-family:'SF UI Display';src:url(fonts/subset-SFUIDisplay-Regular.woff2) format("woff2"),url(fonts/subset-SFUIDisplay-Regular.woff) format("woff");font-weight:400;font-style:normal}@font-face{font-family:'SF UI Display';src:url(fonts/subset-SFUIDisplay-Thin.woff2) format("woff2"),url(fonts/subset-SFUIDisplay-Thin.woff) format("woff");font-weight:100;font-style:normal}@font-face{font-family:'SF UI Display';src:url(fonts/subset-SFUIDisplay-Light.woff2) format("woff2"),url(fonts/subset-SFUIDisplay-Light.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:'SF UI Display';src:url(fonts/subset-SFUIDisplay-Medium.woff2) format("woff2"),url(fonts/subset-SFUIDisplay-Medium.woff) format("woff");font-weight:500;font-style:normal}html{font-size:16px}body{position:relative;font-family:"SF UI Display",sans-serif;font-weight:400;font-size:1rem;line-height:1.2;color:#000;background-color:#fff}img{max-width:100%}.container-fluid{max-width:1365px}.row_indents_m{margin-left:-10px;margin-right:-10px}.row_indents_m>.column{padding-left:10px;padding-right:10px}.column{padding-left:15px;padding-right:15px}.logo{font-weight:400;line-height:1;padding:20px 0 10px}.logo-franchise{font-size:42px;font-weight:100}.logo-img{width:300px}.logo-text{font-size:22px;font-weight:300}.modal-close{position:absolute;top:25px;right:40px;font-size:20px;color:#a4b1b7;z-index:3}.modal-content{border:none;background-color:#fff;-webkit-box-shadow:0 0 70px 0 rgba(119,123,167,.35);box-shadow:0 0 70px 0 rgba(119,123,167,.35);-webkit-border-radius:0;border-radius:0;margin-left:15px;margin-right:15px}.modal-body{padding:50px 45px 10px}h1{line-height:1}h3{font-size:36px;font-weight:500}.font-weight-medium{font-weight:500!important}.font-size-0{font-size:0!important}.font-size-20{font-size:20px!important}.font-size-22{font-size:22px!important}.font-size-24{font-size:24px!important}.line-height-30{line-height:30px!important}.line-height-34{line-height:34px!important}.button-clr{background-color:transparent;padding:0;border:none}.button{display:inline-block;text-decoration:none!important}.button-yellow .button-in{display:block;padding:24px 45px;background-color:#ffed00}.button-yellow-shadow .button-in{position:relative;top:-10px;left:10px}.button-simple-yellow{background-color:#ffed00;border:2px solid #ffed00;padding:20px 41px;font-size:18px;line-height:1;color:#000!important;font-weight:500}.menu-nav li{padding-left:20px;padding-right:20px}.menu-nav li a{display:block;font-weight:300;font-size:18px;color:#000}.menu-close{position:absolute;top:15px;right:15px;color:#fff;font-size:16px;background-color:#e3000f;-webkit-border-radius:50%;border-radius:50%;width:40px;height:40px}.menu-close-in{position:relative;top:-5px;left:5px;width:40px;height:40px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;color:#000;background-color:#ffed00;-webkit-border-radius:50%;border-radius:50%}.menu-open{position:absolute;top:20px;right:20px;background-color:#e3000f;-webkit-border-radius:50%;border-radius:50%;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;height:40px;width:40px;font-size:20px;color:#fff}.menu-open-in{position:relative;top:-5px;left:5px;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;width:41px;height:41px;color:#000;background-color:#ffed00;-webkit-border-radius:50%;border-radius:50%}.header{position:fixed;top:0;left:0;width:100%;z-index:999;border-top:1px solid #009ee3;border-bottom:1px solid #009ee3;height:57px;padding:17px 0 15px;background-color:#fff}.front-wrap{padding-top:57px}.front{position:relative;padding-bottom:120px}.front-bg{position:absolute;top:0;left:0;width:100%;height:100%;-webkit-background-size:cover;background-size:cover;background-position:50% 100%;background-repeat:no-repeat}.front-img{width:130.5%;position:absolute;top:-20px;left:50%;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);margin-left:-38px;max-width:none}.front-origami1{max-width:232px;position:absolute;right:100%;margin-right:100px;top:-20px}.front-origami2{max-width:195px;position:absolute;left:100%;margin-left:180px;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);top:-110px}@media (min-width:576px){.modal-dialog{max-width:500px;margin:1.75rem auto}.modal-dialog-centered{min-height:calc(100% - 3.5rem)}.modal-dialog-centered::before{height:calc(100vh - 3.5rem)}.d-sm-none{display:none!important}}@media only screen and (min-width:576px){.modal-dialog{max-width:795px}.modal-dialog_thanks{max-width:555px}}@media (min-width:768px){.col-md-6{-ms-flex:0 0 50%;-webkit-box-flex:0;-webkit-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-7{-ms-flex:0 0 58.333333%;-webkit-box-flex:0;-webkit-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.d-md-none{display:none!important}}@media (min-width:992px){.d-lg-none{display:none!important}.d-lg-block{display:block!important}.flex-lg-row{-ms-flex-direction:row!important;-webkit-box-orient:horizontal!important;-webkit-box-direction:normal!important;-webkit-flex-direction:row!important;flex-direction:row!important}.flex-lg-wrap{-ms-flex-wrap:wrap!important;-webkit-flex-wrap:wrap!important;flex-wrap:wrap!important}.justify-content-lg-center{-ms-flex-pack:center!important;-webkit-box-pack:center!important;-webkit-justify-content:center!important;justify-content:center!important}.mt-lg-5{margin-top:3rem!important}.pt-lg-5{padding-top:3rem!important}}@media only screen and (min-width:992px){.front-img-wrap{min-height:720px}}@media (min-width:1200px){.col-xl-3{-ms-flex:0 0 25%;-webkit-box-flex:0;-webkit-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-xl-6{-ms-flex:0 0 50%;-webkit-box-flex:0;-webkit-flex:0 0 50%;flex:0 0 50%;max-width:50%}.order-xl-1{-ms-flex-order:1;-webkit-box-ordinal-group:2;-webkit-order:1;order:1}.order-xl-2{-ms-flex-order:2;-webkit-box-ordinal-group:3;-webkit-order:2;order:2}.order-xl-3{-ms-flex-order:3;-webkit-box-ordinal-group:4;-webkit-order:3;order:3}.justify-content-xl-start{-ms-flex-pack:start!important;-webkit-box-pack:start!important;-webkit-justify-content:flex-start!important;justify-content:flex-start!important}.mt-xl-5{margin-top:3rem!important}.mr-xl-5{margin-right:3rem!important}.text-xl-left{text-align:left!important}}@media only screen and (min-width:1200px){.front{padding-bottom:170px}}@media only screen and (max-width:991px){.logo{padding:50px 0 20px}.menu{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,.8);z-index:999;opacity:0;visibility:hidden}.menu .menu-nav li{margin-bottom:20px}.menu .menu-nav li a{font-size:24px;color:#fff!important}.menu-in{position:relative;width:280px;height:100%;padding:100px 0;background-color:#009ee3}.header{height:auto;padding:0;background-color:transparent;border:none}.front-wrap{padding-top:0}}@media only screen and (max-width:767px){.modal-close{top:20px;right:20px}.modal-body{padding:50px 20px 10px}}@media only screen and (max-width:575px){.logo{padding:80px 0 20px}h3{font-size:28px}.menu-in{padding:80px 0}}.form-control{height:auto;min-height:auto;padding:16px 20px;border:1px solid #c6d2df;font-size:16px;line-height:1;font-weight:400;color:#605f5f;resize:none;-webkit-border-radius:0;border-radius:0}.form-control:-moz-placeholder{font-size:16px;font-weight:300;color:#605f5f}.form-control::-moz-placeholder{font-size:16px;font-weight:300;color:#605f5f}.form-control:-ms-input-placeholder{font-size:16px;font-weight:300;color:#605f5f}.form-control::-webkit-input-placeholder{font-size:16px;font-weight:300;color:#605f5f}.invalid-feedback,.valid-feedback{font-size:20px;line-height:30px;font-weight:500}.invalid-feedback{font-size:1rem;font-weight:400!important;font-size:15px!important}.valid-feedback{font-size:1rem;font-weight:400!important;font-size:15px!important}.wrapper{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;overflow:hidden}.wrapper__in{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;min-height:100vh}
+		</style>
+		<link rel="preload" type="text/css" href="css/critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" type="text/css" href="css/critical.css"></noscript>
+		<title>Франшиза - FreshPrint Рекламано-производственная компания</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="wrapper__in">
+				<header class="header">
+					<!-- Yandex.Metrika counter -->
+					<script type="text/javascript">
+						(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+							m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+						(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+				
+						ym(58097875, "init", {
+							clickmap:true,
+							trackLinks:true,
+							accurateTrackBounce:true,
+							webvisor:true
+						});
+					</script>
+					<noscript><div><img src="https://mc.yandex.ru/watch/58097875" style="position:absolute; left:-9999px;" alt></div></noscript>
+					<!-- /Yandex.Metrika counter -->
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="menu flex-grow-1" data-id="menu">
+								<div class="menu-in d-flex flex-column">
+									<button class="menu-close button-clr d-lg-none" type="button" data-toggle="toggleVisible" data-target="menu">
+										<span class="menu-close-in">
+											<svg class="svg-icon">
+												<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+											</svg>
+										</span>
+									</button>
+									<ul class="menu-nav list-unstyled d-flex flex-column flex-lg-row flex-lg-wrap justify-content-lg-center flex-grow-1 mb-0">
+										<li><a href="#composition" data-toggle="anchor">Состав франшизы</a></li>
+										<li><a href="#conditions" data-toggle="anchor">Условия</a></li>
+										<li><a href="#about" data-toggle="anchor">О владельце</a></li>
+										<li><a href="#contacts" data-toggle="anchor">Контакты</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="column d-lg-none ml-auto font-size-0">
+								<button class="menu-open button-clr" type="button" data-toggle="toggleVisible" data-target="menu">
+									<span class="menu-open-in">
+										<svg class="svg-icon">
+											<use xlink:href="images/svg-sprite/svgSprite.svg#menu"></use>
+										</svg>
+									</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="front-wrap">
+					<div class="front d-flex flex-column text-white">
+						<div class="front-bg" style="background-image: url(images/front-bg.png)">&nbsp;</div>
+						<div class="container-fluid position-relative">
+							<h1 class="logo text-center text-white">
+								<div class="logo-franchise">ФРАНШИЗА</div>
+								<img class="logo-img" src="images/logo.svg" alt>
+								<div class="logo-text">Рекламно-производственная компания</div>
+							</h1>
+							<div class="row">
+								<div class="order-2 order-xl-1 col-md-6 col-xl-3">
+									<div class="pt-lg-5">
+										<div class="pt-lg-5 mt-xl-5">
+											<div class="text-center mb-4 pb-2 pt-5 mt-lg-5">
+												<img class="mr-xl-5" src="images/min.svg" width="80" alt>
+											</div>
+											<div class="font-size-24 font-weight-medium mb-4 pb-2 text-center text-xl-left">Минимум для старта:</div>
+											<div class="row row_indents_m mb-3 font-size-20 font-weight-light justify-content-center justify-content-xl-start">
+												<div class="column">
+													<svg class="svg-icon">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#user"></use>
+													</svg>
+												</div>
+												<div class="column">1 человек</div>
+											</div>
+											<div class="row row_indents_m mb-3 font-size-20 font-weight-light justify-content-center justify-content-xl-start">
+												<div class="column">
+													<svg class="svg-icon">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#notebook"></use>
+													</svg>
+												</div>
+												<div class="column">1 ноутбук</div>
+											</div>
+											<div class="row row_indents_m mb-3 font-size-20 font-weight-light justify-content-center justify-content-xl-start">
+												<div class="column">
+													<svg class="svg-icon">
+														<use xlink:href="images/svg-sprite/svgSprite.svg#car"></use>
+													</svg>
+												</div>
+												<div class="column">и автомобиль</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="order-1 order-xl-2 col-md-7 ml-auto mr-auto col-xl-6">
+									<div class="d-flex flex-column">
+										<div class="front-img-wrap d-flex flex-column">
+											<img class="front-img d-none d-lg-block" src="images/front-img.png" alt>
+											<img class="front-origami1 d-none d-lg-block" src="images/origami1.png" alt>
+											<img class="front-origami2 d-none d-lg-block" src="images/origami2.png" alt>
+											<div class="mt-auto text-center position-relative">
+												<div class="front-subscribe-box">
+													<a class="button button-yellow button-yellow-shadow mb-4" href="#" data-toggle="modal" data-target="#callModal">
+														<span class="button-in">Оставьте заявку</span>
+													</a>
+													<div class="front-btn-descr">чтобы получить финансовый план для своего города</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="order-3 order-xl-3 col-md-6 col-xl-3">
+									<div class="pt-lg-5">
+										<div class="pt-lg-5 mt-xl-5">
+											<div class="text-center pt-5 mt-lg-5 mb-4 pb-2">
+												<img class="mr-xl-5" src="images/advantages.svg" width="76" alt>
+											</div>
+											<div class="font-size-22 font-weight-medium line-height-34 text-center text-xl-left">Не нужно замораживать деньги на производственное оборудование, склады, иметь техническое образование и брать кредиты, всё проще, чем кажется</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ads-bussines text-black">
+					<div class="ads-bussines-bg lazyload" data-bgset="images/ads-business-bg.jpg">&nbsp;</div>
+					<div class="container-fluid position-relative">
+						<div class="text-center mb-5 pb-3">
+							<h2>Бизнес в рекламно-производственной сфере</h2>
+						</div>
+						<div class="row justify-content-center">
+							<div class="col-sm-6 col-lg-4 mb-5 pb-3">
+								<div class="ads-bussines-card position-relative">
+									<div class="text-center mb-4 pb-3">
+										<div class="ads-bussines-card-img-wrap">
+											<div class="ads-bussines-card-img-bg ads-bussines-card-img-bg_first lazyload" data-bgset="images/ads-business-card-bg.svg">
+												<!-- <img class="ads-bussines-card-img" src="images/ads-bussines-img1.svg" alt=""> -->
+												<div class="lazy-box lazy-loading">
+													<img class="ads-bussines-card-img lazy-img lazy-box-img lazyload" data-sizes="auto" data-src="images/ads-bussines-img1.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="ads-bussines-card-body">
+										<div class="font-size-20 line-height-30 font-weight-medium mb-3">Наружная реклама <br class="d-none d-xl-block"> Вывески, стенды, баннера</div>
+										<div class="line-height-30 font-weight-light">Высокая возвращаемость клиентов (LTV). Клиенты склонны доверять одному подрядчику по полиграфии и наружной рекламе годами, а потребность в данной продукции постоянна.</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-4 mb-5 pb-3">
+								<div class="ads-bussines-card position-relative">
+									<div class="text-center mb-4 pb-3">
+										<div class="ads-bussines-card-img-wrap">
+											<div class="ads-bussines-card-img-bg ads-bussines-card-img-bg_first lazyload" data-bgset="images/ads-business-card-bg.svg">
+												<!-- <img class="ads-bussines-card-img" src="images/ads-bussines-img1.svg" alt=""> -->
+												<div class="lazy-box lazy-loading">
+													<img class="ads-bussines-card-img lazy-img lazy-box-img lazyload" data-sizes="auto" data-src="images/ads-bussines-img2.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="ads-bussines-card-body">
+										<div class="font-size-20 line-height-30 font-weight-medium mb-3">Полиграфия / Визитки, листовки, буклеты, каталог</div>
+										<div class="line-height-30 font-weight-light">Высокий и регулярный спрос + предсказуемые сезонные пики</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-lg-4 mb-5 pb-3">
+								<div class="ads-bussines-card position-relative">
+									<div class="text-center mb-4 pb-3">
+										<div class="ads-bussines-card-img-wrap">
+											<div class="ads-bussines-card-img-bg ads-bussines-card-img-bg_third lazyload" data-bgset="images/ads-business-card-bg.svg">
+												<!-- <img class="ads-bussines-card-img" src="images/ads-bussines-img1.svg" alt=""> -->
+												<div class="lazy-box lazy-loading">
+													<img class="ads-bussines-card-img lazy-img lazy-box-img lazyload" data-sizes="auto" data-src="images/ads-bussines-img3.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="ads-bussines-card-body">
+										<div class="font-size-20 line-height-30 font-weight-medium mb-3">Другие направления. Оклейка авто, корпоративные сувениры </div>
+										<div class="line-height-30 font-weight-light">Безграничные возможности развития: наращивайте ассортимент продукции и продолжайте работать в качестве агентства или же приобретите оборудование для производства и нанимайте своих монтажников</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="franchise d-flex flex-column" id="composition">
+					<div class="franchise-bg lazyload" data-bgset="images/franchise-bg.jpg">&nbsp;</div>
+					<div class="container-fluid position-relative d-flex flex-column flex-grow-1">
+						<div class="row flex-grow-1">
+							<div class="col-xl-5">
+								<div class="franchise-title text-center">
+									<h2>Франшиза FreshPrint <br> избавляет от рисков:</h2>
+								</div>
+							</div>
+							<div class="col-xl-7 d-flex flex-column">
+								<div class="franchise-wrap-content flex-grow-1">
+									<div class="franchise-wrap-content-in">
+										<div class="row pb-2 d-none d-sm-flex">
+											<div class="col-6 mb-5 pb-4 pb-sm-0">
+												<div class="position-relative">
+													<div class="franchise-img-bg lazyload" data-bgset="images/franchise-img-bg1.svg">&nbsp;</div>
+													<div class="font-size-20 font-weight-medium line-height-30 pl-5 ml-2 pt-4 position-relative"><div class="pt-3 mt-1">Состав франшизы:</div></div>
+												</div>
+											</div>
+											<div class="col-6 mb-5 pb-4 pb-sm-0">
+												<div class="position-relative">
+													<div class="franchise-img-bg lazyload" data-bgset="images/franchise-img-bg2.svg">&nbsp;</div>
+													<div class="font-size-20 font-weight-medium line-height-30 pl-5 ml-2 pt-4 position-relative"><div class="pt-3 mt-1">Решение FreshPrint:</div></div>
+												</div>
+											</div>
+										</div>
+										<div class="d-sm-none position-relative text-center">
+											<h3>Состав франшизы и Решение FreshPrint:</h3>
+										</div>
+										<div class="devider-line pt-2 pb-2">
+											<div class="row">
+												<div class="col-sm-6 pb-2"><div class="font-weight-medium line-height-30">Настроенные каналы продаж</div></div>
+												<div class="col-sm-6 pb-2"><div class="font-weight-light line-height-22">FreshPrint настраивает рекламу в вашем городе (контекстная реклама, соц.сети, доски объявлений)</div></div>
+											</div>
+										</div>
+										<div class="devider-line pt-2 pb-2">
+											<div class="row">
+												<div class="col-sm-6 pb-2"><div class="font-weight-medium line-height-30">База проверенных подрядчиков в Вашем городе</div></div>
+												<div class="col-sm-6 pb-2"><div class="font-weight-light line-height-22">FreshPrint предоставит базу надежных подрядчиков в вашем городе, изучит их цены и научит коммуникации, освобождающей от рисков</div></div>
+											</div>
+										</div>
+										<div class="devider-line pt-2 pb-2">
+											<div class="row">
+												<div class="col-sm-6 pb-2"><div class="font-weight-medium line-height-30">Полное юридическое сопровождение</div></div>
+												<div class="col-sm-6 pb-2"><div class="font-weight-light line-height-22">Мы снабжаем партнеров четкими и проверенными документами для ведения бизнеса: смета, договор, бланк утверждения макетов</div></div>
+											</div>
+										</div>
+										<div class="devider-line pt-2 pb-2">
+											<div class="row">
+												<div class="col-sm-6 pb-2"><div class="font-weight-medium line-height-30">Полностью упакованный бренд</div></div>
+												<div class="col-sm-6 pb-2"><div class="font-weight-light line-height-22">Логотип, сайт и все маркетинговые материалы для полноценной работы</div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="experience text-white" id="conditions">
+					<div class="experience-bg lazyload" data-bgset="images/experience-bg.jpg">&nbsp;</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-9 col-xl-10">
+								<div class="row pb-2 pb-xl-5">
+									<div class="col-xl-7 mb-5 mb-xl-3">
+										<h2 class="mb-4">В Вашем распоряжении специалисты и опыт FreshPrint</h2>
+										<div class="row row_indents_m align-items-center flex-nowrap">
+											<div class="column flex-shrink-0">
+												<div class="lazy-box lazy-loading" style="width: 82px; height: 82px;">
+													<img class="lazy-img lazy-box-img lazyload" data-sizes="auto" data-src="images/likes.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+												</div>
+											</div>
+											<div class="column">
+												<div class="font-size-24 line-height-34 font-weight-medium">Не потребуется искать, нанимать <br class="d-none d-xl-block"> и оформлять специалистов <br class="d-none d-xl-block"> по дизайну, верстке</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-5 mb-5 mb-xl-3">
+										<h2 class="mb-4">А так же вы найдете в коробке</h2>
+										<div class="font-size-20 line-height-30 font-weight-light"><div class="font-weight-bold">10 бесплатных дизайн макетов</div> для Ваших клиентов в подарок от специалистов FreshPrint и последующее дизайн сопровождение по минимальной цене</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xl-10">
+										<div class="experience-wrap-content font-size-24 line-height-34 color-dark font-weight-medium mb-5">
+											Отработанные скрипты продаж, методы реализации проектов, система акций и специальных предложений обеспечат высокую пожизненную стоимость клиента
+										</div>
+										<div class="experience-ban lazyload" data-bgset="images/ban.png">&nbsp;</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="subscribe text-white d-flex flex-column">
+					<div class="subscribe-bg lazyload" data-bgset="images/subscribe-bg.jpg">&nbsp;</div>
+					<div class="subscribe-in flex-grow-1 d-flex flex-column justify-content-center">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="subscribe-wrap ml-auto mr-auto">
+									<div class="mb-4 text-center text-md-left">
+										<div class="font-size-24 line-height-34 font-weight-medium mb-1">Хотите получить предложение прямо сейчас?</div>
+										<div class="font-size-20 line-height-30 font-weight-light">Заполните форму и получите руководства</div>
+									</div>
+									<form method="POST" class="needs-validation" action novalidate>
+										<div class="row align-items-center justify-content-center justify-content-md-start">
+											<div class="col-md form-group mb-4 pb-2">
+												<input class="form-control" type="text" name="name" placeholder="Введите Ваше имя" required autocomplete="off">
+												<div class="valid-feedback">Верно!</div>
+												<div class="invalid-feedback">Не верно!</div>
+											</div>
+											<div class="col-md form-group mb-4 pb-2">
+												<input class="form-control phone" type="text" name="tel" placeholder="Введите контактный телефон" required autocomplete="off">
+												<div class="valid-feedback">Верно!</div>
+												<div class="invalid-feedback">Не верно!</div>
+											</div>
+											<div class="col-md form-group mb-4 pb-2 text-center text-md-left">
+												<button class="subscribe-btn button button-simple-yellow on-dark button-clr" type="submit">Оставьте заявку</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="owner" id="about">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-xl-5 mb-5">
+								<div class="text-center text-xl-left">
+									<div class="position-relative">
+										<div class="owner-img lazy-box lazy-loading">
+											<img class="lazy-img lazy-box-img lazyload" data-sizes="auto" data-src="images/owner-img.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+										</div>
+										<button class="owner-play-button button-clr" type="button" data-toggle="modal" data-target="#owner-modal" data-src="https://www.youtube.com/embed/FTIqPDeW_SE?controls=0"><span class="owner-play-button-in">&nbsp;</span></button>
+									</div>
+									<a class="owner-btn-communication button button-simple-yellow" href="#" data-toggle="modal" data-target="#callModal">Связаться с владельцем</a>
+								</div>
+							</div>
+							<div class="col-xl-7 mb-5">
+								<div class="pl-3 pr-3 pl-sm-4 pr-sm-4 pl-xl-0 pr-xl-0">
+									<h2 class="mb-5">Владелец франшизы – <br class="d-none d-xl-block"> ваш наставник 24/7</h2>
+									<ul class="style-list row list-unstyled mb-0">
+										<li class="d-flex flex-wrap flex-sm-nowrap align-items-start">
+											<div class="style-list-content">С нуля запустил оптовый бизнес по продаже муки, в первый год работы оборот составил 8 миллионов, продано было <strong>более 500 тонн муки</strong></div>
+										</li>
+										<li class="d-flex flex-wrap flex-sm-nowrap align-items-start">
+											<div class="style-list-content">С нуля построил рекламно-производственную группу, <strong>5 лет опыта</strong>, оборот за 2019 год составил <strong>4 245 600 рублей</strong> и это не потолок, план на 2020 не менее <strong>5 000 000 рублей</strong></div>
+										</li>
+										<li class="d-flex flex-wrap flex-sm-nowrap align-items-start">
+											<div class="style-list-content"><strong>Настроил регулярный поток клиентов</strong> 10 бесплатных дизайн макетов. <br> И наш подход</div>
+										</li>
+										<li class="d-flex flex-wrap flex-sm-nowrap align-items-start">
+											<div class="style-list-content"><strong>Готов делиться опытом и знаниями</strong> 24/7 для процветания вашего бизнеса </div>
+										</li>
+									</ul>
+									<div class="pl-sm-5 mt-xl-5">
+										<div class="pl-sm-4 ml-sm-2 ml-xl-0 pl-xl-5 font-size-24 line-height-34 font-weight-medium">
+											<div class="color-red">Наш подход:</div>
+											<div class>максимум прибыли из минимума вложений!</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="start-business text-white">
+					<div class="start-business-bg lazyload" data-bgset="images/start-business.png">&nbsp;</div>
+					<div class="container-fluid position-relative">
+						<div class="text-center font-size-24 font-weight-light mb-5">
+							<h2 class="mb-5">Начните свой бизнес с минимальными вложениями</h2>
+							<div class="mb-3"><strong>Прибыль</strong></div>
+							<div class="text-white position-relative overflow-hidden"><div class="position-relative">от 35 000 - 100 000 руб.</div></div>
+							<div>в месяц</div>
+						</div>
+						<div class="row">
+							<div class="start-business-diamond ml-xl-auto mr-xl-auto">
+								<div class="row d-block d-lg-flex flex-nowrap align-items-center justify-content-center d-xl-block">
+									<div class="column flex-shrink-0">
+										<div class="lazy-box lazy-loading text-center">
+											<img class="lazy-img lazy-box-img lazyload" data-sizes="auto" data-src="images/diamond.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+										</div>
+									</div>
+									<div class="column">
+										<div class="row d-lg-block mt-5 mt-lg-0">
+											<div class="col-sm-6 col-lg position-static text-center text-lg-left pb-2 pb-lg-0">
+												<div class="start-business-all start-business-first font-size-24 font-weight-light mb-4 mb-xl-0">
+													<div class="mb-1 mb-xl-3"><strong>Инвестиции </strong></div>
+													<div>только в рекламу <br> (можно начать без офиса)</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-lg position-static text-center text-lg-left pb-2 pb-lg-0">
+												<div class="start-business-all start-business-second font-size-24 font-weight-light mb-4 mb-xl-0">
+													<div class="mb-1 mb-xl-3"><strong>Окупаемость</strong></div>
+													<div>6 месяцев</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-lg position-static text-center text-lg-left pb-2 pb-lg-0">
+												<div class="start-business-all start-business-third font-size-24 font-weight-light mb-4 mb-xl-0">
+													<div class="mb-1 mb-xl-3"><strong>Паушальный взнос </strong></div>
+													<div>250 000 руб</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-lg position-static text-center text-lg-left pb-2 pb-lg-0">
+												<div class="start-business-all start-business-fourth font-size-24 font-weight-light mb-4 mb-xl-0">
+													<div class="mb-1 mb-xl-3"><strong>Роялти – 4%</strong></div>
+													<div>+ 6 месяцев роялти каникул</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="price">
+					<div class="price-bg lazyload" data-bgset="images/price-bg.png">&nbsp;</div>
+					<div class="container-fluid position-relative">
+						<div class="text-center mb-4 pb-1">
+							<h2>Франшиза дешевле, чем запускаться самому!</h2>
+						</div>
+						<div class="row">
+							<div class="col-10 ml-auto mr-auto">
+								<div class="row justify-content-between flex-nowrap pb-3 d-none d-md-flex">
+									<div class="column mb-5 pb-4 pb-sm-0">
+										<div class="position-relative">
+											<div class="franchise-img-bg lazyload" data-bgset="images/franchise-img-bg1.svg">&nbsp;</div>
+											<div class="font-size-20 font-weight-medium line-height-30 pl-5 ml-2 pt-4 position-relative"><div class="pt-3 mt-1">Наименование работ</div></div>
+										</div>
+									</div>
+									<div class="column mb-5 pb-4 pb-sm-0">
+										<div class="position-relative">
+											<div class="franchise-img-bg lazyload" data-bgset="images/franchise-img-bg2.svg">&nbsp;</div>
+											<div class="font-size-20 font-weight-medium line-height-30 pl-5 ml-2 pt-4 position-relative"><div class="pt-3 mt-1">Среднерыночная стоимость</div></div>
+										</div>
+									</div>
+								</div>
+								<h3 class="text-center d-md-none mb-5">Наименование работ и среднерыночная стоимость.</h3>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Разработка фирменного стиля и рекламных материалов</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-light font-size-20 dotted-txt-price">от 25 000 руб.</div></div>
+								</div>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Разработка сайта</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-light font-size-20 dotted-txt-price">от 130 000 руб.</div></div>
+								</div>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Оформление социальных сетей</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-light font-size-20 dotted-txt-price">от 8 000 руб.</div></div>
+								</div>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Настройка контекстной рекламы по всем направлениям бизнеса</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-light font-size-20 dotted-txt-price">от 20 000 руб.</div></div>
+								</div>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Наполнение досок объявлениями</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-light font-size-20 dotted-txt-price">от 10 000 руб.</div></div>
+								</div>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Расходы на штатного дизайнера</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-light font-size-20 dotted-txt-price">от 25 000 руб.</div></div>
+								</div>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Сбор базы потенциальных подрядчиков (от 10 ваших рабочих дней)</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-light font-size-20 dotted-txt-price">от 20 000 руб.</div></div>
+								</div>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Разработка внутренних документов для коммуникации с клиентами и подрядчиками <br> (от 10 ваших рабочих дней)</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-light font-size-20 dotted-txt-price">от 20 000 руб.</div></div>
+								</div>
+								<div class="dotted-txt row flex-column flex-sm-row flex-sm-nowrap pb-3">
+									<div class="column mb-1"><div class="font-weight-medium">Знания и опыт</div></div>
+									<div class="column mb-1 flex-grow-1"><div class="dotted-txt-line">&nbsp;</div></div>
+									<div class="column mb-1"><div class="font-weight-semi font-size-20 dotted-txt-price">Бесценно</div></div>
+								</div>
+							</div>
+						</div>
+						<div class="mt-4 pt-3 mb-5">
+							<div class="price-wrap-green">
+								<div class="font-size-24 line-height-30 font-weight-medium text-white text-center">Франшиза с гарантией результата - 250 000 руб.</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 mb-4 pb-2 mb-md-5 pb-md-5">
+								<div class="price-content-bg lazyload" data-bgset="images/price-content-bg.svg"><div class="font-size-24 line-height-34 font-weight-medium">Опыт бизнеса по франшизе позволит <br class="d-none d-xl-block"> снизить вероятность и последствия рисков!</div></div>
+							</div>
+							<div class="col-md-6 mb-4 pb-2 mb-md-5 pb-md-5">
+								<div class="price-content-bg lazyload" data-bgset="images/price-content-bg.svg"><div class="font-size-24 line-height-34 font-weight-medium">Материалы франшизы позволят получать <br class="d-none d-xl-block"> стабильный доход от отработанной системы <br class="d-none d-xl-block"> привлечения и ведения клиентов</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact" id="contacts">
+					<div class="container-fluid position-relative">
+						<div class="text-center mb-5 mb-xl-0">
+							<h2>Контакты</h2>
+						</div>
+						<div class="row align-items-center">
+							<div class="contact-column-index col-lg-6 order-2 order-lg-1">
+								<div class="row justify-content-center justify-content-lg-end">
+									<div class="column">
+										<div class="mb-4 pb-2">
+											<a class="contact-link" href="tel:+79135135999"><span class="position-relative">+7 913 513 59 99</span></a>
+										</div>
+										<div class="font-size-24 line-height-34 font-weight-normal">
+											<div class="mb-4 pb-2">Свяжитесь с владельцем, <br> чтобы узнать интересующую информацию</div>
+											<div class="mb-4 pb-2">Или оставьте заявку на расчет бизнес-плана <br> в вашем городе</div>
+										</div>
+										<a class="button button-red" href="#" data-toggle="modal" data-target="#callModal">Оставьте заявку</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 order-1 order-lg-2 mb-4">
+								<div class="lazy-box lazy-loading text-center text-lg-left">
+									<img class="lazy-img lazy-box-img lazyload" data-sizes="auto" data-src="images/contact-img.png" data-srcset="images/contact-img-576.png 576w, images/contact-img.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+								</div>
+								<div class="contact-bg lazyload d-none d-lg-block" data-bgset="images/contact-bg.svg">&nbsp;</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer mt-auto text-white position-relative">
+					<div class="container-fluid">
+						<div class="row flex-xl-nowrap justify-content-center text-center align-items-center">
+							<div class="column mb-3 flex-shrink-0 mb-xl-auto">© 2015-2020 г.  фрешпринт.рф <!-- <br class="d-none d-xl-block"> --> <br> <a class="text-white text-underline" href="policy.pdf">Политика конфиденциальности</a></div>
+							<div class="column mb-3"><div class="text-center line-height-22 font-weight-light">Информация на сайте носит ознакомичельный характер и не является публичной офертой. Размещенные на сайте примеры работ, являются интеллектуальной собственностью и охраняются законодательсттвом РФ. Копирование, использование и распространение материалов сайта без письменного разрешения ЗАПРЕЩЕНО!</div></div>
+							<div class="column mb-3 flex-shrink-0"><div class="font-size-18 line-height-34">Специалисты по упаковке франшиз </div></div>
+							<div class="column mb-3 flex-shrink-0">
+								<a class="d-block" href="http://promarket.one" target="_blank">
+									<div class="lazy-box lazy-loading">
+										<img class="lazy-img lazy-box-img lazyload" data-sizes="auto" data-src="images/pro-logo.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</footer>
+				
+				
+				
+				<div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="callModalTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<button type="button" class="modal-close button-clr" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="modal-body">
+								<div class="font-size-24 line-height-34 font-weight-medium mb-2">Хотите получить предложение прямо сейчас?</div>
+								<div class="font-size-20 line-height-30 font-weight-light mb-4 pb-1">Заполните форму и получите руководства</div>
+								<form method="POST" class="needs-validation" action novalidate>
+									<div class="row justify-content-center">
+										<div class="col-md-6 form-group mb-4 pb-3">
+											<input class="form-control" type="text" name="name" placeholder="Введите Ваше имя" required autocomplete="off">
+											<div class="valid-feedback">Верно!</div>
+											<div class="invalid-feedback">Не верно!</div>
+										</div>
+										<div class="col-md-6 form-group mb-4 pb-3">
+											<input class="form-control phone" type="text" name="tel" placeholder="Введите контактный телефон" required autocomplete="off">
+											<div class="valid-feedback">Верно!</div>
+											<div class="invalid-feedback">Не верно!</div>
+										</div>
+										<div class="col-md-6 form-group mb-4 pb-3">
+											<input class="form-control" type="email" name="mail" placeholder="Введите ваш E-mail" required autocomplete="off">
+											<div class="valid-feedback">Верно!</div>
+											<div class="invalid-feedback">Не верно!</div>
+										</div>
+										<div class="col-md-6 form-group mb-4 pb-3">
+											<input class="form-control" type="text" name="city" placeholder="Укажите ваш город" required autocomplete="off">
+											<div class="valid-feedback">Верно!</div>
+											<div class="invalid-feedback">Не верно!</div>
+										</div>
+										<div class="col-md-6 form-group mb-4 pb-3">
+											<div class="text-center">
+												<button class="button button-simple-yellow button-clr" type="submit">Оставьте заявку</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog_thanks modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<button type="button" class="modal-close button-clr" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="modal-body">
+								<div class="text-center">
+									<div class="font-size-24 line-height-34 font-weight-medium mb-4 pb-1">Спасибо за заказ, наши менеджеры <br> вскоре вам ответят</div>
+									<button class="button button-simple-yellow button-clr mb-4" type="submit" data-dismiss="modal">Вернуться на сайт</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal fade" id="owner-modal" tabindex="-1" role="dialog" aria-labelledby="thanksModalTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<button type="button" class="modal-close button-clr" data-dismiss="modal" aria-label="Close">
+								<svg class="svg-icon">
+									<use xlink:href="images/svg-sprite/svgSprite.svg#close"></use>
+								</svg>
+							</button>
+							<div class="modal-body">
+								<div class="text-center pt-4">
+									<div class="owner-video mb-4"></div>
+									<button class="button button-simple-yellow button-clr mb-4" type="submit" data-dismiss="modal">Вернуться на сайт</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<link rel="preload" type="text/css" href="css/vendorCss.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" type="text/css" href="css/vendorCss.css"></noscript>
+		<link rel="preload" type="text/css" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" type="text/css" href="css/style.css"></noscript>
+		<script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+		<script async>
+			function loadJS(u){var r=document.getElementsByTagName("script")[0],s=document.createElement("script");s.src=u;r.parentNode.insertBefore(s,r);}
+		
+			if(!window.HTMLPictureElement || !('sizes' in document.createElement('img'))){
+				loadJS("https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/plugins/respimg/ls.respimg.min.js");
+			};
+			var lazy = function lazy() {
+				document.addEventListener('lazyloaded', function (e)  {
+					e.target.parentNode.classList.add('lazy-image-loaded');
+					e.target.parentNode.classList.remove('lazy-loading');
+				});
+			}
+		
+			lazy();
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/plugins/bgset/ls.bgset.min.js" async></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.1/lazysizes.min.js" async></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="js/vendor.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
