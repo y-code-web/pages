@@ -10267,7 +10267,7 @@ button.swiper-pagination-bullet {
   --h4: 1.33333rem;
   --h5: 1.11111rem;
   --text: 1rem;
-  --animate-duration: 800ms;
+  --animate-duration: 600ms;
 }
 
 html {
