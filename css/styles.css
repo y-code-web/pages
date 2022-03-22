@@ -10370,6 +10370,27 @@ img {
   list-style: none;
 }
 
+.scroll-custom--base, .section__in {
+  /* Track */
+  /* Handle */
+}
+
+.scroll-custom--base::-webkit-scrollbar, .section__in::-webkit-scrollbar {
+  width: 0.27778em;
+  border-radius: 0.11111em;
+  background-color: #000;
+}
+
+.scroll-custom--base::-webkit-scrollbar-track, .section__in::-webkit-scrollbar-track {
+  background-color: var(--background-color-light);
+  border-radius: 0.11111em;
+}
+
+.scroll-custom--base::-webkit-scrollbar-thumb, .section__in::-webkit-scrollbar-thumb {
+  background-color: var(--background-color-red);
+  border-radius: 0.11111em;
+}
+
 .svg-icon {
   display: inline-block;
   width: 1em;
