@@ -10631,7 +10631,7 @@ img {
 }
 
 .accordion--base .accordion-body {
-  padding: 0.83333em 0 0;
+  padding: 0;
   color: var(--font-color-light);
   font-size: var(--text);
 }
@@ -10747,6 +10747,7 @@ img {
 }
 
 .section__in {
+  position: relative;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 2.77778em 0;
@@ -12524,6 +12525,9 @@ img {
 @media only screen and (min-width: 768px) {
   html {
     font-size: 15px;
+  }
+  .section--about .section__content {
+    max-width: 75%;
   }
 }
 
