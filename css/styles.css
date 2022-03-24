@@ -10806,8 +10806,12 @@ img {
   background-position: 50% 50%;
 }
 
+.section--portfolio .section__content a {
+  color: var(--font-color-red);
+}
+
 .section--portfolio h2 {
-  margin-bottom: 0.69444em;
+  margin-bottom: 0.13889em;
 }
 
 .section--portfolio .carousel--gallery {
