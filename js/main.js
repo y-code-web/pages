@@ -93,13 +93,19 @@ $(function () {
   var headerAnimationIn = headerElement.data('animationIn');
   var headerAnimationOut = headerElement.data('animationOut');
   var hash = $(location).attr('hash');
-  var mainSection = $(hash);
+  var mainSection = hash ? $(hash) : $('#main');
   var mainSectionContentElement = mainSection.find('[data-element="content"]');
   var mainSectionContentAnimationIn = mainSectionContentElement.data('animationIn');
   var mainSectionContentAnimationOut = mainSectionContentElement.data('animationOut');
   var mainSectionBackgroundElement = mainSection.find('[data-element="background"]');
   var mainSectionBackgroundAnimationIn = mainSectionBackgroundElement.data('animationIn');
   var mainSectionBackgroundAnimationOut = mainSectionBackgroundElement.data('animationOut');
+
+  $('[data-element="switch-slide"]').each(function(i, el) {
+    if ($(el).attr('href') == hash) {
+      $(el).parent().addClass('active');
+    }
+  })
 
   animateCSS(loader[0], loaderAnimationOut)
   .then(function() {
