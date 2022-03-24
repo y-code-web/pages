@@ -92,7 +92,8 @@ $(function () {
   var headerElement = $('[data-element="header"]');
   var headerAnimationIn = headerElement.data('animationIn');
   var headerAnimationOut = headerElement.data('animationOut');
-  var mainSection = $('#main');
+  var hash = $(location).attr('hash');
+  var mainSection = $(hash);
   var mainSectionContentElement = mainSection.find('[data-element="content"]');
   var mainSectionContentAnimationIn = mainSectionContentElement.data('animationIn');
   var mainSectionContentAnimationOut = mainSectionContentElement.data('animationOut');
@@ -157,7 +158,7 @@ $(function () {
   });
 
   $('[data-element="switch-slide"]').on("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     var target = $(this).attr("href");
     var _this = $(this);
     var contentElementNext = $(target).find('[data-element="content"]');
